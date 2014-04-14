@@ -1,0 +1,91 @@
+Warn : deprecated option: -p/--pipe. Use '-c "gdb_port pipe; log_output openocd.log"' instead.
+Info : only one transport option; autoselect 'jtag'
+adapter speed: 500 kHz
+Info : clock speed 500 kHz
+Info : JTAG tap: lm3s.cpu tap/device found: 0x4ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x4)
+Info : lm3s.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : accepting 'gdb' connection from pipe
+Warn : acknowledgment received, but no packet pending
+undefined debug reason 6 - target needs reset
+adapter speed: 500 kHz
+cortex_m3 reset_config vectreset
+Resetting Core Peripherals
+Info : JTAG tap: lm3s.cpu tap/device found: 0x4ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x4)
+Warn : Only resetting the Cortex-M3 core, use a reset-init event handler to reset any peripherals or configure hardware srst support.
+invalid command name "delay"
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x81000000 pc: 0x000048a2 msp: 0x20001090
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7406
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x776c
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7328
+Error: JTAG-DP STICKY ERROR
+Error: MEM_AP_CSW 0x23000051, MEM_AP_TAR 0x7416
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Warn : target not halted
+Warn : target not halted
+Warn : target not halted
+Warn : target not halted
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Warn : Block read error address 0x1000c4c
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
+Polling target lm3s.cpu succeeded again
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 700ms
+Polling target lm3s.cpu succeeded again
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Polling target lm3s.cpu succeeded again
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
+Warn : Invalid ACK 0 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 700ms
+Polling target lm3s.cpu succeeded again
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Polling target lm3s.cpu succeeded again
