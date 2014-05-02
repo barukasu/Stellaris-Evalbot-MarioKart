@@ -1,0 +1,36 @@
+Warn : deprecated option: -p/--pipe. Use '-c "gdb_port pipe; log_output openocd.log"' instead.
+Info : only one transport option; autoselect 'jtag'
+adapter speed: 500 kHz
+Info : clock speed 500 kHz
+Info : JTAG tap: lm3s.cpu tap/device found: 0x4ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x4)
+Info : lm3s.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : accepting 'gdb' connection from pipe
+Warn : acknowledgment received, but no packet pending
+undefined debug reason 6 - target needs reset
+adapter speed: 500 kHz
+cortex_m3 reset_config vectreset
+Resetting Core Peripherals
+Info : JTAG tap: lm3s.cpu tap/device found: 0x4ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x4)
+Warn : Only resetting the Cortex-M3 core, use a reset-init event handler to reset any peripherals or configure hardware srst support.
+invalid command name "delay"
+target state: halted
+target halted due to debug-request, current mode: Handler HardFault
+xPSR: 0x61000003 pc: 0x00000528 msp: 0xffffffd4
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+shutdown command invoked
+shutdown command invoked
