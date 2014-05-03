@@ -1,12 +1,10 @@
-# Object files
-*.o
+# Object files  (removed .o so we don't have to recompile the Stellaris USB driver library which I had to modify)
 *.ko
 *.obj
 *.elf
 
-# Libraries
+# Libraries (removed .a so we don't have to recompile the Stellaris USB driver library which I had to modify)
 *.lib
-*.a
 
 # Shared objects (inc. Windows DLLs)
 *.dll
