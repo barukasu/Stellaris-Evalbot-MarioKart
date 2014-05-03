@@ -2,23 +2,38 @@
 //
 // hibernate.h - API definition for the Hibernation module.
 //
-// Copyright (c) 2007-2011 Texas Instruments Incorporated.  All rights reserved.
+// Copyright (c) 2007-2013 Texas Instruments Incorporated.  All rights reserved.
 // Software License Agreement
 // 
-// Texas Instruments (TI) is supplying this software for use solely and
-// exclusively on TI's microcontroller products. The software is owned by
-// TI and/or its suppliers, and is protected under applicable copyright
-// laws. You may not combine this software with "viral" open-source
-// software in order to form a larger program.
+//   Redistribution and use in source and binary forms, with or without
+//   modification, are permitted provided that the following conditions
+//   are met:
 // 
-// THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
-// NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT
-// NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL NOT, UNDER ANY
-// CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
-// DAMAGES, FOR ANY REASON WHATSOEVER.
+//   Redistributions of source code must retain the above copyright
+//   notice, this list of conditions and the following disclaimer.
 // 
-// This is part of revision 7243 of the Stellaris Peripheral Driver Library.
+//   Redistributions in binary form must reproduce the above copyright
+//   notice, this list of conditions and the following disclaimer in the
+//   documentation and/or other materials provided with the  
+//   distribution.
+// 
+//   Neither the name of Texas Instruments Incorporated nor the names of
+//   its contributors may be used to endorse or promote products derived
+//   from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// 
+// This is part of revision 10636 of the Stellaris Peripheral Driver Library.
 //
 //*****************************************************************************
 
@@ -51,6 +66,7 @@ extern "C"
 //*****************************************************************************
 #define HIBERNATE_WAKE_PIN        0x00000010
 #define HIBERNATE_WAKE_RTC        0x00000008
+#define HIBERNATE_WAKE_LOW_BAT    0x00000200
 
 //*****************************************************************************
 //
@@ -59,12 +75,17 @@ extern "C"
 //*****************************************************************************
 #define HIBERNATE_LOW_BAT_DETECT  0x00000020
 #define HIBERNATE_LOW_BAT_ABORT   0x000000A0
+#define HIBERNATE_LOW_BAT_1_9V    0x00000000
+#define HIBERNATE_LOW_BAT_2_1V    0x00002000
+#define HIBERNATE_LOW_BAT_2_3V    0x00004000
+#define HIBERNATE_LOW_BAT_2_5V    0x00006000
 
 //*****************************************************************************
 //
 // Macros defining interrupt source bits for the interrupt functions.
 //
 //*****************************************************************************
+#define HIBERNATE_INT_WR_COMPLETE 0x00000010
 #define HIBERNATE_INT_PIN_WAKE    0x00000008
 #define HIBERNATE_INT_LOW_BAT     0x00000004
 #define HIBERNATE_INT_RTC_MATCH_0 0x00000001
@@ -72,9 +93,22 @@ extern "C"
 
 //*****************************************************************************
 //
+// Macros defining oscillator configuration options for the
+// HibernateClockConfig() function.
+//
+//*****************************************************************************
+#define HIBERNATE_OSC_LOWDRIVE  0x00040000
+#define HIBERNATE_OSC_HIGHDRIVE 0x00060000
+#define HIBERNATE_OSC_DISABLE   0x00010000
+
+//*****************************************************************************
+//
 // API Function prototypes
 //
 //*****************************************************************************
+extern void HibernateGPIORetentionEnable(void);
+extern void HibernateGPIORetentionDisable(void);
+extern tBoolean HibernateGPIORetentionGet(void);
 extern void HibernateEnableExpClk(unsigned long ulHibClk);
 extern void HibernateDisable(void);
 extern void HibernateClockSelect(unsigned long ulClockInput);
@@ -101,7 +135,13 @@ extern void HibernateIntRegister(void (*pfnHandler)(void));
 extern void HibernateIntUnregister(void);
 extern unsigned long HibernateIntStatus(tBoolean bMasked);
 extern void HibernateIntClear(unsigned long ulIntFlags);
-extern unsigned int HibernateIsActive(void);
+extern unsigned long HibernateIsActive(void);
+extern void HibernateRTCSSMatch0Set(unsigned long ulMatch);
+extern unsigned long HibernateRTCSSMatch0Get(void);
+extern unsigned long HibernateRTCSSGet(void);
+extern void HibernateClockConfig(unsigned long ulConfig);
+extern void HibernateBatCheckStart(void);
+extern unsigned long HibernateBatCheckDone(void);
 
 //*****************************************************************************
 //

@@ -41,6 +41,7 @@ static void IntDefaultHandler(void);
 //*****************************************************************************
 extern void SchedulerSysTickIntHandler();
 extern void SoundIntHandler();
+extern void USB0HostIntHandler(void);
 extern void ISR_Bumper();
 
 
@@ -90,8 +91,8 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // GPIO Port B
     IntDefaultHandler,                      // GPIO Port C
     IntDefaultHandler,                      // GPIO Port D
-    ISR_Bumper,                      // GPIO Port E
-    IntDefaultHandler,                    // UART0 Rx and Tx
+    ISR_Bumper,                             // GPIO Port E
+    IntDefaultHandler,                      // UART0 Rx and Tx
     IntDefaultHandler,                      // UART1 Rx and Tx
     IntDefaultHandler,                      // SSI0 Rx and Tx
     IntDefaultHandler,                      // I2C0 Master and Slave
@@ -130,7 +131,7 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // CAN2
     IntDefaultHandler,                      // Ethernet
     IntDefaultHandler,                      // Hibernate
-    IntDefaultHandler,                      // USB0
+    USB0HostIntHandler,                     // USB0
     IntDefaultHandler,                      // PWM Generator 3
     IntDefaultHandler,                      // uDMA Software Transfer
     IntDefaultHandler,                      // uDMA Error
@@ -138,7 +139,7 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // ADC1 Sequence 1
     IntDefaultHandler,                      // ADC1 Sequence 2
     IntDefaultHandler,                      // ADC1 Sequence 3
-    SoundIntHandler,                      // I2S0
+    SoundIntHandler,                        // I2S0
     IntDefaultHandler,                      // External Bus Interface 0
     IntDefaultHandler                       // GPIO Port J
 };

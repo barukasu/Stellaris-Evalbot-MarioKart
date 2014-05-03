@@ -2,23 +2,38 @@
 //
 // usb.h - Prototypes for the USB Interface Driver.
 //
-// Copyright (c) 2007-2011 Texas Instruments Incorporated.  All rights reserved.
+// Copyright (c) 2007-2013 Texas Instruments Incorporated.  All rights reserved.
 // Software License Agreement
 // 
-// Texas Instruments (TI) is supplying this software for use solely and
-// exclusively on TI's microcontroller products. The software is owned by
-// TI and/or its suppliers, and is protected under applicable copyright
-// laws. You may not combine this software with "viral" open-source
-// software in order to form a larger program.
+//   Redistribution and use in source and binary forms, with or without
+//   modification, are permitted provided that the following conditions
+//   are met:
 // 
-// THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
-// NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT
-// NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL NOT, UNDER ANY
-// CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
-// DAMAGES, FOR ANY REASON WHATSOEVER.
+//   Redistributions of source code must retain the above copyright
+//   notice, this list of conditions and the following disclaimer.
 // 
-// This is part of revision 7243 of the Stellaris Peripheral Driver Library.
+//   Redistributions in binary form must reproduce the above copyright
+//   notice, this list of conditions and the following disclaimer in the
+//   documentation and/or other materials provided with the  
+//   distribution.
+// 
+//   Neither the name of Texas Instruments Incorporated nor the names of
+//   its contributors may be used to endorse or promote products derived
+//   from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// 
+// This is part of revision 10636 of the Stellaris Peripheral Driver Library.
 //
 //*****************************************************************************
 
@@ -152,6 +167,7 @@ extern "C"
 // USB_DEV_* values are used when the USB controller is in device mode.
 //
 //*****************************************************************************
+#define USB_HOST_IN_STATUS      0xFFFF0000  // Mask of all host IN interrupts
 #define USB_HOST_IN_PID_ERROR   0x01000000  // Stall on this endpoint received
 #define USB_HOST_IN_NOT_COMP    0x00100000  // Device failed to respond
 #define USB_HOST_IN_STALL       0x00400000  // Stall on this endpoint received
@@ -163,6 +179,7 @@ extern "C"
                                             // device
 #define USB_HOST_IN_FIFO_FULL   0x00020000  // RX FIFO full
 #define USB_HOST_IN_PKTRDY      0x00010000  // Data packet ready
+#define USB_HOST_OUT_STATUS     0x0000FFFF  // Mask of all host OUT interrupts
 #define USB_HOST_OUT_NAK_TO     0x00000080  // NAK received for more than the
                                             // specified timeout period
 #define USB_HOST_OUT_NOT_COMP   0x00000080  // No response from device
@@ -474,6 +491,8 @@ extern void USBHostPwrConfig(unsigned long ulBase, unsigned long ulFlags);
 extern void USBHostPwrFaultDisable(unsigned long ulBase);
 extern void USBHostPwrFaultEnable(unsigned long ulBase);
 extern void USBHostRequestIN(unsigned long ulBase, unsigned long ulEndpoint);
+extern void USBHostRequestINClear(unsigned long ulBase,
+                                  unsigned long ulEndpoint);
 extern void USBHostRequestStatus(unsigned long ulBase);
 extern void USBHostReset(unsigned long ulBase, tBoolean bStart);
 extern void USBHostResume(unsigned long ulBase, tBoolean bStart);
@@ -501,11 +520,12 @@ extern void USBDevMode(unsigned long ulBase);
 extern void USBOTGMode(unsigned long ulBase);
 extern void USBPHYPowerOff(unsigned long ulBase);
 extern void USBPHYPowerOn(unsigned long ulBase);
+extern unsigned long USBNumEndpointsGet(unsigned long ulBase);
 
 //*****************************************************************************
 //
 // Several USB APIs have been renamed, with the original function name being
-// deprecated.  These defines and function protypes provide backward
+// deprecated.  These defines and function prototypes provide backward
 // compatibility.
 //
 //*****************************************************************************

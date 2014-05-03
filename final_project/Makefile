@@ -75,6 +75,8 @@ ${COMPILER}:
 #
 ${COMPILER}/mariokart.axf: ${COMPILER}/main.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/mariokart.axf: ${COMPILER}/gamepad.o
+${COMPILER}/mariokart.axf: ${COMPILER}/bouncy.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/display96x16x1.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/sound.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/sensors.o
@@ -82,7 +84,8 @@ ${COMPILER}/mariokart.axf: ${COMPILER}/dac.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/wav.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/scheduler.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/ustdlib.o
-${COMPILER}/mariokart.axf: ${ROOT}/driverlib/${COMPILER}/libdriver.a
+${COMPILER}/mariokart.axf: ${ROOT}/usblib/${COMPILER}/libusb-cm3.a
+${COMPILER}/mariokart.axf: ${ROOT}/driverlib/${COMPILER}/libdriver-cm3.a
 ${COMPILER}/mariokart.axf: mariokart.ld
 SCATTERgcc_mariokart=mariokart.ld
 ENTRY_mariokart=ResetISR

@@ -77,7 +77,6 @@ CFLAGS=-mthumb             \
        -MD                 \
        -std=c99            \
        -Wall               \
-       -pedantic           \
        -DPART_${PART}      \
        -c
 

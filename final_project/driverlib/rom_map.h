@@ -3,23 +3,38 @@
 // rom_map.h - Macros to facilitate calling functions in the ROM when they are
 //             available and in flash otherwise.
 //
-// Copyright (c) 2008-2011 Texas Instruments Incorporated.  All rights reserved.
+// Copyright (c) 2008-2013 Texas Instruments Incorporated.  All rights reserved.
 // Software License Agreement
 // 
-// Texas Instruments (TI) is supplying this software for use solely and
-// exclusively on TI's microcontroller products. The software is owned by
-// TI and/or its suppliers, and is protected under applicable copyright
-// laws. You may not combine this software with "viral" open-source
-// software in order to form a larger program.
+//   Redistribution and use in source and binary forms, with or without
+//   modification, are permitted provided that the following conditions
+//   are met:
 // 
-// THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
-// NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT
-// NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL NOT, UNDER ANY
-// CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
-// DAMAGES, FOR ANY REASON WHATSOEVER.
+//   Redistributions of source code must retain the above copyright
+//   notice, this list of conditions and the following disclaimer.
 // 
-// This is part of revision 7243 of the Stellaris Peripheral Driver Library.
+//   Redistributions in binary form must reproduce the above copyright
+//   notice, this list of conditions and the following disclaimer in the
+//   documentation and/or other materials provided with the  
+//   distribution.
+// 
+//   Neither the name of Texas Instruments Incorporated nor the names of
+//   its contributors may be used to endorse or promote products derived
+//   from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// 
+// This is part of revision 10636 of the Stellaris Peripheral Driver Library.
 //
 //*****************************************************************************
 
@@ -212,6 +227,20 @@
 #else
 #define MAP_ADCPhaseDelayGet \
         ADCPhaseDelayGet
+#endif
+#ifdef ROM_ADCResolutionSet
+#define MAP_ADCResolutionSet \
+        ROM_ADCResolutionSet
+#else
+#define MAP_ADCResolutionSet \
+        ADCResolutionSet
+#endif
+#ifdef ROM_ADCResolutionGet
+#define MAP_ADCResolutionGet \
+        ROM_ADCResolutionGet
+#else
+#define MAP_ADCResolutionGet \
+        ADCResolutionGet
 #endif
 
 //*****************************************************************************
@@ -691,6 +720,27 @@
 #else
 #define MAP_EthernetPHYRead \
         EthernetPHYRead
+#endif
+#ifdef ROM_EthernetPHYAddrSet
+#define MAP_EthernetPHYAddrSet \
+        ROM_EthernetPHYAddrSet
+#else
+#define MAP_EthernetPHYAddrSet \
+        EthernetPHYAddrSet
+#endif
+#ifdef ROM_EthernetPHYPowerOff
+#define MAP_EthernetPHYPowerOff \
+        ROM_EthernetPHYPowerOff
+#else
+#define MAP_EthernetPHYPowerOff \
+        EthernetPHYPowerOff
+#endif
+#ifdef ROM_EthernetPHYPowerOn
+#define MAP_EthernetPHYPowerOn \
+        ROM_EthernetPHYPowerOn
+#else
+#define MAP_EthernetPHYPowerOn \
+        EthernetPHYPowerOn
 #endif
 
 //*****************************************************************************
@@ -1652,6 +1702,20 @@
 #define MAP_IntPendClear \
         IntPendClear
 #endif
+#ifdef ROM_IntPriorityMaskSet
+#define MAP_IntPriorityMaskSet \
+        ROM_IntPriorityMaskSet
+#else
+#define MAP_IntPriorityMaskSet \
+        IntPriorityMaskSet
+#endif
+#ifdef ROM_IntPriorityMaskGet
+#define MAP_IntPriorityMaskGet \
+        ROM_IntPriorityMaskGet
+#else
+#define MAP_IntPriorityMaskGet \
+        IntPriorityMaskGet
+#endif
 
 //*****************************************************************************
 //
@@ -2485,13 +2549,6 @@
 #define MAP_TimerControlTrigger \
         TimerControlTrigger
 #endif
-#ifdef ROM_TimerControlEvent
-#define MAP_TimerControlEvent \
-        ROM_TimerControlEvent
-#else
-#define MAP_TimerControlEvent \
-        TimerControlEvent
-#endif
 #ifdef ROM_TimerControlStall
 #define MAP_TimerControlStall \
         ROM_TimerControlStall
@@ -2959,6 +3016,20 @@
 #define MAP_uDMAChannelSelectDefault \
         uDMAChannelSelectDefault
 #endif
+#ifdef ROM_uDMAControlAlternateBaseGet
+#define MAP_uDMAControlAlternateBaseGet \
+        ROM_uDMAControlAlternateBaseGet
+#else
+#define MAP_uDMAControlAlternateBaseGet \
+        uDMAControlAlternateBaseGet
+#endif
+#ifdef ROM_uDMAChannelScatterGatherSet
+#define MAP_uDMAChannelScatterGatherSet \
+        ROM_uDMAChannelScatterGatherSet
+#else
+#define MAP_uDMAChannelScatterGatherSet \
+        uDMAChannelScatterGatherSet
+#endif
 
 //*****************************************************************************
 //
@@ -3020,6 +3091,13 @@
 #else
 #define MAP_USBDevEndpointStall \
         USBDevEndpointStall
+#endif
+#ifdef ROM_USBDevEndpointStallClear
+#define MAP_USBDevEndpointStallClear \
+        ROM_USBDevEndpointStallClear
+#else
+#define MAP_USBDevEndpointStallClear \
+        USBDevEndpointStallClear
 #endif
 #ifdef ROM_USBDevEndpointStatusClear
 #define MAP_USBDevEndpointStatusClear \
@@ -3084,6 +3162,13 @@
 #define MAP_USBFIFOConfigSet \
         USBFIFOConfigSet
 #endif
+#ifdef ROM_USBFIFOFlush
+#define MAP_USBFIFOFlush \
+        ROM_USBFIFOFlush
+#else
+#define MAP_USBFIFOFlush \
+        USBFIFOFlush
+#endif
 #ifdef ROM_USBFrameNumberGet
 #define MAP_USBFrameNumberGet \
         ROM_USBFrameNumberGet
@@ -3104,13 +3189,6 @@
 #else
 #define MAP_USBHostAddrSet \
         USBHostAddrSet
-#endif
-#ifdef ROM_USBHostEndpointConfig
-#define MAP_USBHostEndpointConfig \
-        ROM_USBHostEndpointConfig
-#else
-#define MAP_USBHostEndpointConfig \
-        USBHostEndpointConfig
 #endif
 #ifdef ROM_USBHostEndpointDataAck
 #define MAP_USBHostEndpointDataAck \
@@ -3245,19 +3323,26 @@
 #define MAP_USBDevEndpointConfigGet \
         USBDevEndpointConfigGet
 #endif
+#ifdef ROM_USBEndpointDMAEnable
+#define MAP_USBEndpointDMAEnable \
+        ROM_USBEndpointDMAEnable
+#else
+#define MAP_USBEndpointDMAEnable \
+        USBEndpointDMAEnable
+#endif
+#ifdef ROM_USBEndpointDMADisable
+#define MAP_USBEndpointDMADisable \
+        ROM_USBEndpointDMADisable
+#else
+#define MAP_USBEndpointDMADisable \
+        USBEndpointDMADisable
+#endif
 #ifdef ROM_USBEndpointDataAvail
 #define MAP_USBEndpointDataAvail \
         ROM_USBEndpointDataAvail
 #else
 #define MAP_USBEndpointDataAvail \
         USBEndpointDataAvail
-#endif
-#ifdef ROM_USBOTGHostRequest
-#define MAP_USBOTGHostRequest \
-        ROM_USBOTGHostRequest
-#else
-#define MAP_USBOTGHostRequest \
-        USBOTGHostRequest
 #endif
 #ifdef ROM_USBModeGet
 #define MAP_USBModeGet \
@@ -3314,6 +3399,34 @@
 #else
 #define MAP_USBIntStatusEndpoint \
         USBIntStatusEndpoint
+#endif
+#ifdef ROM_USBHostMode
+#define MAP_USBHostMode \
+        ROM_USBHostMode
+#else
+#define MAP_USBHostMode \
+        USBHostMode
+#endif
+#ifdef ROM_USBDevMode
+#define MAP_USBDevMode \
+        ROM_USBDevMode
+#else
+#define MAP_USBDevMode \
+        USBDevMode
+#endif
+#ifdef ROM_USBPHYPowerOff
+#define MAP_USBPHYPowerOff \
+        ROM_USBPHYPowerOff
+#else
+#define MAP_USBPHYPowerOff \
+        USBPHYPowerOff
+#endif
+#ifdef ROM_USBPHYPowerOn
+#define MAP_USBPHYPowerOn \
+        ROM_USBPHYPowerOn
+#else
+#define MAP_USBPHYPowerOn \
+        USBPHYPowerOn
 #endif
 
 //*****************************************************************************
@@ -3425,6 +3538,26 @@
 #else
 #define MAP_WatchdogStallDisable \
         WatchdogStallDisable
+#endif
+
+//*****************************************************************************
+//
+// Macros for the Software API.
+//
+//*****************************************************************************
+#ifdef ROM_Crc16Array
+#define MAP_Crc16Array \
+        ROM_Crc16Array
+#else
+#define MAP_Crc16Array \
+        Crc16Array
+#endif
+#ifdef ROM_Crc16Array3
+#define MAP_Crc16Array3 \
+        ROM_Crc16Array3
+#else
+#define MAP_Crc16Array3 \
+        Crc16Array3
 #endif
 
 //*****************************************************************************
