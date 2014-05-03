@@ -1,6 +1,7 @@
 /*****************************************************************************
  Skeleton code for cooperative scheduler based application
  - Includes two example "threads"
+ 	 -- Function to Play a sound if bumper was hit
  	 -- WavPlayContinue() caller
  	 -- OLED Bouncy Ball thing
  *****************************************************************************/
@@ -8,6 +9,8 @@
 #include "inc/hw_memmap.h"				// Memory mapped I/O address #defines
 #include "driverlib/sysctl.h"			// SysCtlPeripheralEnable()
 #include "drivers/display96x16x1.h"		// OLED display functions and #defines
+#include "driverlib/gpio.h"				// GPIO functions and #defines
+#include "drivers/sensors.h"			// BumperSensorsInit
 #include "utils/scheduler.h"			// scheduler
 #include "driverlib/interrupt.h"		// Interrupt functions
 #include "driverlib/udma.h"				// DMA required for sound/USB
@@ -29,7 +32,8 @@
  *****************************************************************************/
 static void vInit(void);
 static void vUpdateDisplay(void *pvParam);
-static void vPlaySound(void *pvParam);
+static void vCheckBumperFlag(void *pvParam);
+static void vContinueSound(void *pvParam);
 
 
 /*****************************************************************************
@@ -41,7 +45,8 @@ static void vPlaySound(void *pvParam);
  */
 tSchedulerTask g_psSchedulerTable[] =
 {
-		{vPlaySound, 0, 5, 0, true},
+		{vContinueSound, 0, 5, 0, false},
+		{vCheckBumperFlag, 0, 3, 0, true},
 		{vUpdateDisplay, 0, 2, 0, true}
 };
 
@@ -55,6 +60,12 @@ tDMAControlTable sDMAControlTable[64] __attribute__ ((aligned(1024)));
 /* Global WAV header */
 tWaveHeader xWaveHeader;
 
+/* Global Flag for Bumper Pressed */
+volatile tBoolean bBumperPressed = false;
+
+/* Global Flag for WAV currently playing */
+tBoolean bWavPlaying = false;
+
 
 /*****************************************************************************
  *  FUNCTION IMPLEMENTATIONS
@@ -63,12 +74,6 @@ int main(void)
 {
 	/* One-time initialization of hardware */
 	vInit();
-
-	int retval = WaveOpen((unsigned long *)g_ucPowerUpWav, &xWaveHeader);
-	if (retval == WAVE_OK)
-	{
-		WavePlayStart(&xWaveHeader);
-	}
 
 	SchedulerInit(TICKS_PER_SECOND);
 
@@ -96,6 +101,12 @@ static void vInit(void)
 	Display96x16x1DisplayOn();
 	Display96x16x1Clear();
 
+	/* Initializes Bumpers with Interrupt */
+	BumpSensorsInit();
+	GPIOPinIntEnable(GPIO_PORTE_BASE, (1 << 0)|(1 << 1));
+	GPIOIntTypeSet(GPIO_PORTE_BASE, (1 << 0)|(1 << 1), GPIO_FALLING_EDGE);
+	IntEnable(20);
+
 	/* Initializes timer, required for scheduler */
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
 	TimerConfigure(TIMER0_BASE, TIMER_CFG_32_BIT_PER_UP);
@@ -108,7 +119,10 @@ static void vInit(void)
 	return;
 }
 
-
+/* Bounces a little ball around the OLED screen.  Must be repeatedly
+ * called by a scheduler to continue animation.  Good way to check
+ * that the scheduler is not stuck
+ */
 static void vUpdateDisplay(void *pvParam)
 {
 
@@ -183,10 +197,55 @@ static void vUpdateDisplay(void *pvParam)
 	image[(y_pos / 8)][x_pos + 1] = 0;
 }
 
+/* If Bumper Flag is true, then start playing sound */
+static void vCheckBumperFlag(void *pvParam)
+{
+	if (bBumperPressed)
+	{
+		WaveOpen((unsigned long *)g_ucPowerUpWav, &xWaveHeader);
+
+		/* Start Playing WAV */
+		WavePlayStart(&xWaveHeader);
+
+		/* Re-enable vContinueSound() */
+		SchedulerTaskEnable(0, false);
+
+		/* Reset Bumper Flag */
+		bBumperPressed = false;
+
+		bWavPlaying = true;
+	}
+}
 
 /* Required to keep the wave sound playing.  Does not complain
  * if called too often or after the WAV is complete. */
-static void vPlaySound(void *pvParam)
+static void vContinueSound(void *pvParam)
 {
-	WavePlayContinue(&xWaveHeader);
+	if (WavePlayContinue(&xWaveHeader))
+	{
+		/* If WavePlayContinue() returns true, then playback is
+		 * complete...disable this task
+		 */
+		bWavPlaying = false;
+		SchedulerTaskDisable(0);
+	}
+}
+
+
+/*****************************************************************************
+ *  INTERRUPT SERVICE ROUTINES
+ *****************************************************************************/
+void ISR_Bumper(void)
+{
+	/* Doesn't differentiate between L or R bumper */
+
+	/* Clears Interrupt */
+	GPIOPinIntClear(GPIO_PORTE_BASE, (1 << 0) | (1 << 1));
+
+	if (!bWavPlaying) // Needs this or some debouncing, otherwise sound messes up
+	{
+		bBumperPressed = true;
+	}
+
+	return;
 }

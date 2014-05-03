@@ -14,8 +14,8 @@ Info : JTAG tap: lm3s.cpu tap/device found: 0x4ba00477 (mfg: 0x23b, part: 0xba00
 Warn : Only resetting the Cortex-M3 core, use a reset-init event handler to reset any peripherals or configure hardware srst support.
 invalid command name "delay"
 target state: halted
-target halted due to debug-request, current mode: Handler HardFault
-xPSR: 0x61000003 pc: 0x00000528 msp: 0xffffffd4
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x21000000 pc: 0x00002e76 msp: 0x2000b88c
 requesting target halt and executing a soft reset
 target state: halted
 target halted due to debug-request, current mode: Thread 
@@ -32,5 +32,9 @@ requesting target halt and executing a soft reset
 target state: halted
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
-shutdown command invoked
-shutdown command invoked
+Warn : Invalid ACK 0x7 in JTAG-DP transaction
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Error: JTAG-DP OVERRUN - check clock, memaccess, or reduce jtag speed
+Error: MEM_AP_CSW 0x23000040, MEM_AP_TAR 0x0
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
+Polling target lm3s.cpu succeeded again
