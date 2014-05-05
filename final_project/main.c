@@ -19,10 +19,12 @@
 #include "drivers/sound.h"              // Sound functions
 #include "drivers/wav.h"                // Wave functions
 #include "powerup_wav.h"                // Wave encoded as a C array
+#include "utils/ustdlib.h"				// used for cat string and int
 
 #include "gamepad.h"                    // Gamepad Functions
 #include "bouncy.h"                     // Bouncy Thing
-
+#include "rangefinder.h"
+#include "sounds.h"
 /*****************************************************************************
  *  PREPROCESSOR DEFINES
  *****************************************************************************/
@@ -34,6 +36,10 @@
 static void vInit(void);
 static void vCheckBumperFlag(void *pvParam);
 static void vContinueSound(void *pvParam);
+static void soundStart(unsigned long ulWaveIndex);
+
+
+volatile unsigned long currentMeasuredDistance;
 
 /*****************************************************************************
  *  GLOBAL VARIABLES
@@ -47,7 +53,8 @@ tSchedulerTask g_psSchedulerTable[] =
         { vContinueSound, 0, 5, 0, false },
         { vCheckBumperFlag, 0, 3, 0, true },
         { vBouncyUpdate, 0, 2, 0, true },
-        { vGamepadUpdate, 0, 1, 0, true }
+        { vGamepadUpdate, 0, 1, 0, true },
+        { vBoxDistanceUpdate, &currentMeasuredDistance, 2, 0, true }
 };
 
 /* Number of tasks in g_psSchedulerTable */
@@ -66,6 +73,7 @@ volatile tBoolean bBumperPressed = false;
 /* Global Flag for WAV currently playing */
 tBoolean bWavPlaying = false;
 
+
 /*****************************************************************************
  *  FUNCTION IMPLEMENTATIONS
  *****************************************************************************/
@@ -76,9 +84,31 @@ int main(void)
 
     SchedulerInit(TICKS_PER_SECOND);
 
+    char statusStr[96];
+
+    int sounddemo=0; // sound demo
+
     while (1)
     {
         SchedulerRun();
+
+
+        /// The following section does the sound demo
+		usprintf(statusStr,"sound=%4d\r",sounddemo);
+		Display96x16x1StringDraw( statusStr,1,true);
+
+        // For getting the range measurements use currentMeasuredDistance
+		//usprintf(statusStr,"AIN0=%4d\r",currentMeasuredDistance);
+		//Display96x16x1StringDraw( statusStr,0,true);
+        //if(currentMeasuredDistance>200 && bWavPlaying==false)
+        //	soundStart(0);
+        if(GamepadButtons.buttonA && bWavPlaying==false)
+        {
+        	soundStart(sounddemo);
+        	sounddemo++;
+        }
+
+
     }
 
     /* This should never happen */
@@ -107,7 +137,7 @@ static void vInit(void)
     TimerEnable(TIMER0_BASE, TIMER_A);
 
     SoundInit();
-    SoundVolumeSet(75);
+    SoundVolumeSet(95);
 
     IntMasterEnable();
 
@@ -116,6 +146,10 @@ static void vInit(void)
 
     /* Hardware initialization for Gamepad related peripherals */
     vGamepadInit();
+
+
+    // Init the rangefinder
+    initRangeFinder();
 
     return;
 }
@@ -176,4 +210,20 @@ void ISR_Bumper(void)
     bBumperPressed = true;
 
     return;
+}
+
+
+void soundStart(unsigned long ulWaveIndex)
+{
+	//g_ucPowerUpWav g_ucSoundWav9
+    //if(WaveOpen((unsigned long *) sWaveClips[ulWaveIndex].pucWav,&xWaveHeader) == WAVE_OK)
+    if(WaveOpen((unsigned long *) sWaveClips[ulWaveIndex].pucWav, &xWaveHeader)==0)
+    //if(WaveOpen((unsigned long *) mk_ucSoundWav8, &xWaveHeader)==0)
+    {
+        WavePlayStart(&xWaveHeader);
+        bWavPlaying = true;
+
+        // Re-enable vContinueSound()
+        SchedulerTaskEnable(0, false);
+    }
 }

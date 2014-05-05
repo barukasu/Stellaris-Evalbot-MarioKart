@@ -82,7 +82,9 @@ ${COMPILER}/mariokart.axf: ${COMPILER}/sound.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/sensors.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/dac.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/wav.o
+${COMPILER}/mariokart.axf: ${COMPILER}/sounds.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/scheduler.o
+${COMPILER}/mariokart.axf: ${COMPILER}/rangefinder.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/ustdlib.o
 ${COMPILER}/mariokart.axf: ${ROOT}/usblib/${COMPILER}/libusb-cm3.a
 ${COMPILER}/mariokart.axf: ${ROOT}/driverlib/${COMPILER}/libdriver-cm3.a
