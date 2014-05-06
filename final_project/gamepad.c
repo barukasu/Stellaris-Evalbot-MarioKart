@@ -298,7 +298,7 @@ void vGamepadUpdate()
         USBHGamepadInit(g_ulGamepadInstance);
         GamepadState = STATE_GAMEPAD_CONNECTED;
         ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 1);
-        Display96x16x1StringDrawCentered("Controller Found", 0, true);
+        Display96x16x1StringDrawCentered("Gamepad Found", 0, true);
         Display96x16x1StringDrawCentered("Press Start", 1, true);
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2 | GPIO_PIN_3, 0);
         break;

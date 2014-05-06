@@ -26,7 +26,7 @@
 #include "driverlib/adc.h"
 #include "driverlib/gpio.h"
 #include "driverlib/sysctl.h"
-#include "utils/uartstdio.h"
+//#include "utils/uartstdio.h"
 #include "rangefinder.h"
 
 void initRangeFinder()
@@ -35,21 +35,21 @@ void initRangeFinder()
     // Enable GPIO port A which is used for UART0 pins.
     // TODO: change this to whichever GPIO port you are using.
     //
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+    //SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
 
     //
     // Configure the pin muxing for UART0 functions on port A0 and A1.
     // This step is not necessary if your part does not support pin muxing.
     // TODO: change this to select the port/pin you are using.
     //
-    GPIOPinConfigure(GPIO_PA0_U0RX);
-    GPIOPinConfigure(GPIO_PA1_U0TX);
+    //GPIOPinConfigure(GPIO_PA0_U0RX);
+    //GPIOPinConfigure(GPIO_PA1_U0TX);
 
     //
     // Select the alternate (UART) function for these pins.
     // TODO: change this to select the port/pin you are using.
     //
-    GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
+    //GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
 
     //
     // Initialize the UART for console I/O.
@@ -71,8 +71,8 @@ void initRangeFinder()
      // TODO: The SYSCTL_XTAL_ value must be changed to match the value of the
      // crystal on your board.
      //
-     SysCtlClockSet(SYSCTL_SYSDIV_10 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
-                    SYSCTL_XTAL_16MHZ);
+     //SysCtlClockSet(SYSCTL_SYSDIV_10 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
+     //               SYSCTL_XTAL_16MHZ);
 
      //
      // Display the setup on the console.

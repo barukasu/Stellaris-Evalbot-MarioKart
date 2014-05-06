@@ -39,7 +39,7 @@ static void vContinueSound(void *pvParam);
 static void soundStart(unsigned long ulWaveIndex);
 
 
-volatile unsigned long currentMeasuredDistance;
+unsigned long currentMeasuredDistance;
 
 /*****************************************************************************
  *  GLOBAL VARIABLES
@@ -87,15 +87,20 @@ int main(void)
     char statusStr[96];
 
     int sounddemo=0; // sound demo
+    SoundVolumeSet(25); // less obnoxious during testing
 
     while (1)
     {
         SchedulerRun();
 
-
-        /// The following section does the sound demo
-		usprintf(statusStr,"sound=%4d\r",sounddemo);
-		Display96x16x1StringDraw( statusStr,1,true);
+        /// Displays sound and distance status
+		if (GamepadState == STATE_GAMEPLAY)
+		{
+		    usprintf(statusStr,"snd=%02d d=%04d",
+		            sounddemo,
+		            currentMeasuredDistance);
+		    Display96x16x1StringDrawCentered( statusStr,0,false);
+		}
 
         // For getting the range measurements use currentMeasuredDistance
 		//usprintf(statusStr,"AIN0=%4d\r",currentMeasuredDistance);
@@ -106,9 +111,8 @@ int main(void)
         {
         	soundStart(sounddemo);
         	sounddemo++;
+        	if (sounddemo >= NUM_WAVES) sounddemo = 0;
         }
-
-
     }
 
     /* This should never happen */

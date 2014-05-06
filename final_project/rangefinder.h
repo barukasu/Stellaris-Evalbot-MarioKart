@@ -41,7 +41,7 @@
 #include "driverlib/adc.h"
 #include "driverlib/gpio.h"
 #include "driverlib/sysctl.h"
-#include "utils/uartstdio.h"
+//#include "utils/uartstdio.h"
 
 
 #define DISTANCE_COUNT_TO_INCHES 300
