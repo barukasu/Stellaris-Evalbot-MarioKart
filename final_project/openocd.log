@@ -15,7 +15,7 @@ Warn : Only resetting the Cortex-M3 core, use a reset-init event handler to rese
 invalid command name "delay"
 target state: halted
 target halted due to debug-request, current mode: Thread 
-xPSR: 0x21000000 pc: 0x00003432 msp: 0x2000b76c
+xPSR: 0x21000000 pc: 0x00003e44 msp: 0x2000b7b0
 requesting target halt and executing a soft reset
 target state: halted
 target halted due to debug-request, current mode: Thread 
@@ -32,7 +32,19 @@ requesting target halt and executing a soft reset
 target state: halted
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
-Warn : Invalid ACK 0x7 in JTAG-DP transaction
+Error: ftdi_write_data: usb bulk write failed
+Error: couldn't write MPSSE commands to FT2232
 Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+Error: ftdi_write_data: usb bulk write failed
+Error: couldn't write MPSSE commands to FT2232
+Error: ftdi_write_data: usb bulk write failed
+Error: couldn't write MPSSE commands to FT2232
+Warn : Block read error address 0x1000c4c
+Error: Target not halted
+Error: failed erasing sectors 0 to 241
+Error: flash_erase returned -304
+Error: ftdi_write_data: usb bulk write failed
+Error: couldn't write MPSSE commands to FT2232
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
 shutdown command invoked
 shutdown command invoked

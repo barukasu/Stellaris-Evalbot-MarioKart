@@ -22,6 +22,7 @@
 #include "utils/ustdlib.h"				// used for cat string and int
 
 #include "gamepad.h"                    // Gamepad Functions
+#include "DriverControl.h"
 #include "bouncy.h"                     // Bouncy Thing
 #include "rangefinder.h"
 #include "sounds.h"
@@ -54,6 +55,7 @@ tSchedulerTask g_psSchedulerTable[] =
         { vCheckBumperFlag, 0, 3, 0, true },
         { vBouncyUpdate, 0, 2, 0, true },
         { vGamepadUpdate, 0, 1, 0, true },
+        { stateController, 0, 3, 0, true},
         { vBoxDistanceUpdate, &currentMeasuredDistance, 2, 0, true }
 };
 
@@ -151,6 +153,7 @@ static void vInit(void)
     /* Hardware initialization for Gamepad related peripherals */
     vGamepadInit();
 
+    initDriveControl();
 
     // Init the rangefinder
     initRangeFinder();
@@ -162,28 +165,28 @@ static void vInit(void)
 /* If Bumper Flag is true, then start playing sound */
 static void vCheckBumperFlag(void *pvParam)
 {
-    if ((bBumperPressed) && (!bWavPlaying))
+   /* //if ((bBumperPressed) && (!bWavPlaying))
     {
         WaveOpen((unsigned long *) g_ucPowerUpWav, &xWaveHeader);
 
-        /* Start Playing WAV */
+        // Start Playing WAV
         WavePlayStart(&xWaveHeader);
 
-        /* Re-enable vContinueSound() */
+        //Re-enable vContinueSound()
         SchedulerTaskEnable(0, false);
 
-        /* Reset Bumper Flag */
-        bBumperPressed = false;
+        // Reset Bumper Flag
+       // bBumperPressed = false;
 
         bWavPlaying = true;
     }
     else
     {
-        /* Need this to prevent an extra bumper press from
-         * being queued while WAV is playing.  We can get rid of this
-         * if we add debounce. */
+         //Need this to prevent an extra bumper press from
+         //* being queued while WAV is playing.  We can get rid of this
+         //* if we add debounce.
         bBumperPressed = false;
-    }
+    }*/
 }
 
 /* Required to keep the wave sound playing.  Does not complain

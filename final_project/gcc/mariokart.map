@@ -1,0 +1,2628 @@
+Archive member included because of file (symbol)
+
+usblib/gcc/libusb-cm3.a(usbhhid.o)
+                              gcc/gamepad.o (g_USBHIDClassDriver)
+usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+                              gcc/gamepad.o (USBHGamepadOpen)
+usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                              usblib/gcc/libusb-cm3.a(usbhhid.o) (USBHCDPipeAlloc)
+usblib/gcc/libusb-cm3.a(usbmode.o)
+                              usblib/gcc/libusb-cm3.a(usbhostenum.o) (g_eUSBMode)
+usblib/gcc/libusb-cm3.a(usbtick.o)
+                              usblib/gcc/libusb-cm3.a(usbhostenum.o) (g_ulUSBSOFCount)
+usblib/gcc/libusb-cm3.a(usbdenum.o)
+                              usblib/gcc/libusb-cm3.a(usbmode.o) (USBDeviceIntHandlerInternal)
+usblib/gcc/libusb-cm3.a(usbdesc.o)
+                              usblib/gcc/libusb-cm3.a(usbhhid.o) (USBDescGetInterface)
+usblib/gcc/libusb-cm3.a(usbhhub.o)
+                              usblib/gcc/libusb-cm3.a(usbhostenum.o) (USBHHubMain)
+usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                              usblib/gcc/libusb-cm3.a(usbdenum.o) (USBDCDConfigDescGetSize)
+usblib/gcc/libusb-cm3.a(usbdconfig.o)
+                              usblib/gcc/libusb-cm3.a(usbdenum.o) (USBDeviceConfig)
+driverlib/gcc/libdriver-cm3.a(adc.o)
+                              gcc/rangefinder.o (ADCIntStatus)
+driverlib/gcc/libdriver-cm3.a(gpio.o)
+                              gcc/main.o (GPIOIntTypeSet)
+driverlib/gcc/libdriver-cm3.a(i2s.o)
+                              gcc/sound.o (I2STxEnable)
+driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                              gcc/main.o (IntMasterEnable)
+driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                              usblib/gcc/libusb-cm3.a(usbhostenum.o) (SysCtlPeripheralReset)
+driverlib/gcc/libdriver-cm3.a(systick.o)
+                              gcc/scheduler.o (SysTickEnable)
+driverlib/gcc/libdriver-cm3.a(timer.o)
+                              gcc/main.o (TimerEnable)
+driverlib/gcc/libdriver-cm3.a(udma.o)
+                              usblib/gcc/libusb-cm3.a(usbhostenum.o) (uDMAChannelEnable)
+driverlib/gcc/libdriver-cm3.a(usb.o)
+                              usblib/gcc/libusb-cm3.a(usbhostenum.o) (USBHostSuspend)
+driverlib/gcc/libdriver-cm3.a(cpu.o)
+                              driverlib/gcc/libdriver-cm3.a(interrupt.o) (CPUcpsid)
+/opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+                              gcc/display96x16x1.o (strlen)
+/opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+                              gcc/ustdlib.o (strncmp)
+/opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+                              gcc/ustdlib.o (strncpy)
+/opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
+                              gcc/DriverControl.o (__aeabi_ui2d)
+/opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_muldivdf3.o)
+                              gcc/DriverControl.o (__aeabi_dmul)
+/opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
+                              gcc/DriverControl.o (__aeabi_d2uiz)
+
+Allocating common symbols
+Common symbol       size              file
+
+GamepadState        0x1               gcc/main.o
+g_ulUSBHIntEvents   0x4               usblib/gcc/libusb-cm3.a(usbhostenum.o)
+GamepadUpdatedFlag  0x1               gcc/main.o
+bNewPLL             0x1               driverlib/gcc/libdriver-cm3.a(sysctl.o)
+g_pucBuffer         0x80              gcc/gamepad.o
+currentMeasuredDistance
+                    0x4               gcc/main.o
+GamepadButtons      0x1               gcc/main.o
+g_pHCDPool          0x80              gcc/gamepad.o
+g_psUSBDevice       0x54              usblib/gcc/libusb-cm3.a(usbdenum.o)
+g_pfTickHandlers    0x18              usblib/gcc/libusb-cm3.a(usbtick.o)
+g_ulPollRate        0x4               usblib/gcc/libusb-cm3.a(usbmode.o)
+ulSysDiv            0x4               driverlib/gcc/libdriver-cm3.a(sysctl.o)
+g_eOTGModeState     0x1               usblib/gcc/libusb-cm3.a(usbmode.o)
+ulOsc               0x4               driverlib/gcc/libdriver-cm3.a(sysctl.o)
+xWaveHeader         0x14              gcc/main.o
+g_pvTickInstance    0x18              usblib/gcc/libusb-cm3.a(usbtick.o)
+g_sDMAControlTable  0x60              gcc/gamepad.o
+sDMAControlTable    0x400             gcc/main.o
+ulOscSelect         0x4               driverlib/gcc/libdriver-cm3.a(sysctl.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00040000         xr
+SRAM             0x20000000         0x00018000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000    0x31510
+                0x00000000                _text = .
+ *(.isr_vector)
+ .isr_vector    0x00000000      0x11c gcc/startup_gcc.o
+                0x00000000                g_pfnVectors
+ *(.text*)
+ .text          0x0000011c        0x0 gcc/main.o
+ .text.main     0x0000011c       0xa8 gcc/main.o
+                0x0000011c                main
+ .text.vInit    0x000001c4       0xa0 gcc/main.o
+ .text.vCheckBumperFlag
+                0x00000264       0x14 gcc/main.o
+ .text.vContinueSound
+                0x00000278       0x38 gcc/main.o
+ .text.ISR_Bumper
+                0x000002b0       0x28 gcc/main.o
+                0x000002b0                ISR_Bumper
+ .text.soundStart
+                0x000002d8       0x58 gcc/main.o
+ .text          0x00000330        0x0 gcc/startup_gcc.o
+ .text.ResetISR
+                0x00000330       0x6c gcc/startup_gcc.o
+                0x00000330                ResetISR
+ .text.NmiSR    0x0000039c        0x8 gcc/startup_gcc.o
+ .text.FaultISR
+                0x000003a4        0x8 gcc/startup_gcc.o
+ .text.IntDefaultHandler
+                0x000003ac        0x8 gcc/startup_gcc.o
+ .text          0x000003b4        0x0 gcc/gamepad.o
+ .text.USBHCDEvents
+                0x000003b4      0x118 gcc/gamepad.o
+                0x000003b4                USBHCDEvents
+ .text.GamepadCallback
+                0x000004cc       0x98 gcc/gamepad.o
+                0x000004cc                GamepadCallback
+ .text.vGamepadInit
+                0x00000564      0x1ac gcc/gamepad.o
+                0x00000564                vGamepadInit
+ .text.vGamepadUpdate
+                0x00000710      0x308 gcc/gamepad.o
+                0x00000710                vGamepadUpdate
+ .text          0x00000a18        0x0 gcc/bouncy.o
+ .text.vBouncyInit
+                0x00000a18       0x18 gcc/bouncy.o
+                0x00000a18                vBouncyInit
+ .text.vBouncyUpdate
+                0x00000a30      0x138 gcc/bouncy.o
+                0x00000a30                vBouncyUpdate
+ .text          0x00000b68        0x0 gcc/display96x16x1.o
+ .text.Display96x16x1WriteFirst
+                0x00000b68       0x6c gcc/display96x16x1.o
+ .text.Display96x16x1WriteByte
+                0x00000bd4       0x8c gcc/display96x16x1.o
+ .text.Display96x16x1WriteArray
+                0x00000c60       0xa4 gcc/display96x16x1.o
+ .text.Display96x16x1WriteFinal
+                0x00000d04       0xcc gcc/display96x16x1.o
+ .text.Display96x16x1ClearLine
+                0x00000dd0       0x60 gcc/display96x16x1.o
+                0x00000dd0                Display96x16x1ClearLine
+ .text.Display96x16x1Clear
+                0x00000e30       0x18 gcc/display96x16x1.o
+                0x00000e30                Display96x16x1Clear
+ .text.Display96x16x1StringDrawLen
+                0x00000e48      0x14c gcc/display96x16x1.o
+                0x00000e48                Display96x16x1StringDrawLen
+ .text.Display96x16x1StringDraw
+                0x00000f94       0x24 gcc/display96x16x1.o
+                0x00000f94                Display96x16x1StringDraw
+ .text.Display96x16x1StringDrawCentered
+                0x00000fb8       0x74 gcc/display96x16x1.o
+                0x00000fb8                Display96x16x1StringDrawCentered
+ .text.Display96x16x1ImageDraw
+                0x0000102c       0xc8 gcc/display96x16x1.o
+                0x0000102c                Display96x16x1ImageDraw
+ .text.Display96x16x1Init
+                0x000010f4      0x258 gcc/display96x16x1.o
+                0x000010f4                Display96x16x1Init
+ .text.Display96x16x1DisplayOn
+                0x0000134c       0x9c gcc/display96x16x1.o
+                0x0000134c                Display96x16x1DisplayOn
+ .text.Display96x16x1DisplayOff
+                0x000013e8       0x38 gcc/display96x16x1.o
+                0x000013e8                Display96x16x1DisplayOff
+ .text          0x00001420        0x0 gcc/sound.o
+ .text.SoundInit
+                0x00001420      0x1e0 gcc/sound.o
+                0x00001420                SoundInit
+ .text.SoundIntHandler
+                0x00001600      0x174 gcc/sound.o
+                0x00001600                SoundIntHandler
+ .text.SoundSetFormat
+                0x00001774      0x2f4 gcc/sound.o
+                0x00001774                SoundSetFormat
+ .text.SoundSampleRateGet
+                0x00001a68       0x18 gcc/sound.o
+                0x00001a68                SoundSampleRateGet
+ .text.SoundBufferPlay
+                0x00001a80      0x2c0 gcc/sound.o
+                0x00001a80                SoundBufferPlay
+ .text.SoundVolumeSet
+                0x00001d40       0x18 gcc/sound.o
+                0x00001d40                SoundVolumeSet
+ .text.SoundVolumeGet
+                0x00001d58       0x18 gcc/sound.o
+                0x00001d58                SoundVolumeGet
+ .text.SoundVolumeDown
+                0x00001d70       0x60 gcc/sound.o
+                0x00001d70                SoundVolumeDown
+ .text.SoundVolumeUp
+                0x00001dd0       0x58 gcc/sound.o
+                0x00001dd0                SoundVolumeUp
+ .text.SoundClassDEn
+                0x00001e28        0xc gcc/sound.o
+                0x00001e28                SoundClassDEn
+ .text.SoundClassDDis
+                0x00001e34        0xc gcc/sound.o
+                0x00001e34                SoundClassDDis
+ .text          0x00001e40        0x0 gcc/sensors.o
+ .text.BumpSensorsInit
+                0x00001e40       0x68 gcc/sensors.o
+                0x00001e40                BumpSensorsInit
+ .text.BumpSensorGetStatus
+                0x00001ea8       0x84 gcc/sensors.o
+                0x00001ea8                BumpSensorGetStatus
+ .text.BumpSensorDebouncer
+                0x00001f2c      0x124 gcc/sensors.o
+                0x00001f2c                BumpSensorDebouncer
+ .text.BumpSensorGetDebounced
+                0x00002050       0x64 gcc/sensors.o
+                0x00002050                BumpSensorGetDebounced
+ .text.WheelSensorsInit
+                0x000020b4      0x1b0 gcc/sensors.o
+                0x000020b4                WheelSensorsInit
+ .text.WheelSensorEnable
+                0x00002264       0x24 gcc/sensors.o
+                0x00002264                WheelSensorEnable
+ .text.WheelSensorDisable
+                0x00002288       0x24 gcc/sensors.o
+                0x00002288                WheelSensorDisable
+ .text.WheelSensorIntEnable
+                0x000022ac       0x94 gcc/sensors.o
+                0x000022ac                WheelSensorIntEnable
+ .text.WheelSensorIntDisable
+                0x00002340       0x58 gcc/sensors.o
+                0x00002340                WheelSensorIntDisable
+ .text.WheelSensorIntHandler
+                0x00002398      0x15c gcc/sensors.o
+                0x00002398                WheelSensorIntHandler
+ .text          0x000024f4        0x0 gcc/motor.o
+ .text.MotorsInit
+                0x000024f4      0x320 gcc/motor.o
+                0x000024f4                MotorsInit
+ .text.MotorDir
+                0x00002814       0xa8 gcc/motor.o
+                0x00002814                MotorDir
+ .text.MotorRun
+                0x000028bc       0x44 gcc/motor.o
+                0x000028bc                MotorRun
+ .text.MotorStop
+                0x00002900       0x5c gcc/motor.o
+                0x00002900                MotorStop
+ .text.MotorSpeed
+                0x0000295c       0xcc gcc/motor.o
+                0x0000295c                MotorSpeed
+ .text          0x00002a28        0x0 gcc/DriverControl.o
+ .text.ActivateSpinout
+                0x00002a28       0x54 gcc/DriverControl.o
+                0x00002a28                ActivateSpinout
+ .text.DecactiveSpinOut
+                0x00002a7c       0x18 gcc/DriverControl.o
+                0x00002a7c                DecactiveSpinOut
+ .text.ActivateBoost
+                0x00002a94       0x44 gcc/DriverControl.o
+                0x00002a94                ActivateBoost
+ .text.DeactiveBoost
+                0x00002ad8       0x18 gcc/DriverControl.o
+                0x00002ad8                DeactiveBoost
+ .text.initDriveControl
+                0x00002af0       0xd8 gcc/DriverControl.o
+                0x00002af0                initDriveControl
+ .text.stateController
+                0x00002bc8       0x70 gcc/DriverControl.o
+                0x00002bc8                stateController
+ .text.stepMotor
+                0x00002c38       0x40 gcc/DriverControl.o
+                0x00002c38                stepMotor
+ .text.manageSpinOut
+                0x00002c78       0xe4 gcc/DriverControl.o
+                0x00002c78                manageSpinOut
+ .text.SpinOut  0x00002d5c       0xe0 gcc/DriverControl.o
+                0x00002d5c                SpinOut
+ .text.manageBoost
+                0x00002e3c       0xf0 gcc/DriverControl.o
+                0x00002e3c                manageBoost
+ *fill*         0x00002f2c        0x4 00
+ .text.manageController
+                0x00002f30      0x1a8 gcc/DriverControl.o
+                0x00002f30                manageController
+ .text          0x000030d8        0x0 gcc/dac.o
+ .text.DACWriteRegister
+                0x000030d8      0x1e4 gcc/dac.o
+ .text.DACReadRegister
+                0x000032bc      0x228 gcc/dac.o
+ .text.DACInit  0x000034e4      0x270 gcc/dac.o
+                0x000034e4                DACInit
+ .text.DACVolumeSet
+                0x00003754       0x74 gcc/dac.o
+                0x00003754                DACVolumeSet
+ .text.DACVolumeGet
+                0x000037c8       0x18 gcc/dac.o
+                0x000037c8                DACVolumeGet
+ .text.DACClassDEn
+                0x000037e0       0x14 gcc/dac.o
+                0x000037e0                DACClassDEn
+ .text.DACClassDDis
+                0x000037f4       0x14 gcc/dac.o
+                0x000037f4                DACClassDDis
+ .text          0x00003808        0x0 gcc/wav.o
+ .text.BufferCallback
+                0x00003808       0x78 gcc/wav.o
+ .text.WaveConvert8Bit
+                0x00003880       0x44 gcc/wav.o
+ .text.WaveOpen
+                0x000038c4      0x1f4 gcc/wav.o
+                0x000038c4                WaveOpen
+ .text.WaveStop
+                0x00003ab8       0x24 gcc/wav.o
+                0x00003ab8                WaveStop
+ .text.WaveRead
+                0x00003adc       0xb8 gcc/wav.o
+ .text.WavePlayStart
+                0x00003b94       0x3c gcc/wav.o
+                0x00003b94                WavePlayStart
+ .text.WavePlayContinue
+                0x00003bd0      0x130 gcc/wav.o
+                0x00003bd0                WavePlayContinue
+ .text.WaveGetTime
+                0x00003d00       0xa0 gcc/wav.o
+                0x00003d00                WaveGetTime
+ .text.WavePlaybackStatus
+                0x00003da0       0x24 gcc/wav.o
+                0x00003da0                WavePlaybackStatus
+ .text          0x00003dc4        0x0 gcc/sounds.o
+ .text          0x00003dc4        0x0 gcc/scheduler.o
+ .text.SchedulerSysTickIntHandler
+                0x00003dc4       0x24 gcc/scheduler.o
+                0x00003dc4                SchedulerSysTickIntHandler
+ .text.SchedulerInit
+                0x00003de8       0x2c gcc/scheduler.o
+                0x00003de8                SchedulerInit
+ .text.SchedulerRun
+                0x00003e14       0x80 gcc/scheduler.o
+                0x00003e14                SchedulerRun
+ .text.SchedulerTaskEnable
+                0x00003e94       0xc0 gcc/scheduler.o
+                0x00003e94                SchedulerTaskEnable
+ .text.SchedulerTaskDisable
+                0x00003f54       0x44 gcc/scheduler.o
+                0x00003f54                SchedulerTaskDisable
+ .text.SchedulerTickCountGet
+                0x00003f98       0x18 gcc/scheduler.o
+                0x00003f98                SchedulerTickCountGet
+ .text.SchedulerElapsedTicksGet
+                0x00003fb0       0x28 gcc/scheduler.o
+                0x00003fb0                SchedulerElapsedTicksGet
+ .text.SchedulerElapsedTicksCalc
+                0x00003fd8       0x34 gcc/scheduler.o
+                0x00003fd8                SchedulerElapsedTicksCalc
+ .text          0x0000400c        0x0 gcc/rangefinder.o
+ .text.initRangeFinder
+                0x0000400c       0x80 gcc/rangefinder.o
+                0x0000400c                initRangeFinder
+ .text.measureBoxDistance
+                0x0000408c       0x64 gcc/rangefinder.o
+                0x0000408c                measureBoxDistance
+ .text.vBoxDistanceUpdate
+                0x000040f0       0x1c gcc/rangefinder.o
+                0x000040f0                vBoxDistanceUpdate
+ .text          0x0000410c        0x0 gcc/ustdlib.o
+ .text.uvsnprintf
+                0x0000410c      0x5bc gcc/ustdlib.o
+                0x0000410c                uvsnprintf
+ .text.usprintf
+                0x000046c8       0x34 gcc/ustdlib.o
+                0x000046c8                usprintf
+ .text.usnprintf
+                0x000046fc       0x34 gcc/ustdlib.o
+                0x000046fc                usnprintf
+ .text.ulocaltime
+                0x00004730      0x1d8 gcc/ustdlib.o
+                0x00004730                ulocaltime
+ .text.ustrtoul
+                0x00004908      0x184 gcc/ustdlib.o
+                0x00004908                ustrtoul
+ .text.ustrstr  0x00004a8c       0x48 gcc/ustdlib.o
+                0x00004a8c                ustrstr
+ .text.ustrnicmp
+                0x00004ad4       0xb4 gcc/ustdlib.o
+                0x00004ad4                ustrnicmp
+ .text.ustrcasecmp
+                0x00004b88       0x24 gcc/ustdlib.o
+                0x00004b88                ustrcasecmp
+ .text.usrand   0x00004bac       0x20 gcc/ustdlib.o
+                0x00004bac                usrand
+ .text.urand    0x00004bcc       0x40 gcc/ustdlib.o
+                0x00004bcc                urand
+ .text          0x00004c0c        0x0 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .text.USBHHIDOpen
+                0x00004c0c       0xd0 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00004c0c                USBHHIDOpen
+ .text.USBHHIDClose
+                0x00004cdc       0x28 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00004cdc                USBHHIDClose
+ .text.HIDIntINCallback
+                0x00004d04       0xb4 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .text.HIDDriverOpen
+                0x00004db8      0x1f8 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .text.HIDDriverClose
+                0x00004fb0       0x50 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .text.USBHHIDSetIdle
+                0x00005000       0x70 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00005000                USBHHIDSetIdle
+ .text.USBHHIDGetReportDescriptor
+                0x00005070       0x60 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00005070                USBHHIDGetReportDescriptor
+ .text.USBHHIDSetProtocol
+                0x000050d0       0x70 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x000050d0                USBHHIDSetProtocol
+ .text.USBHHIDGetReport
+                0x00005140       0x30 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00005140                USBHHIDGetReport
+ .text.USBHHIDSetReport
+                0x00005170       0x60 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00005170                USBHHIDSetReport
+ .text          0x000051d0        0x0 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .text.USBHGamepadOpen
+                0x000051d0       0x68 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+                0x000051d0                USBHGamepadOpen
+ .text.USBHGamepadClose
+                0x00005238       0x2c usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+                0x00005238                USBHGamepadClose
+ .text.USBHGamepadInit
+                0x00005264       0x44 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+                0x00005264                USBHGamepadInit
+ .text.UpdateGamepadState
+                0x000052a8       0xe4 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .text.USBHGamepadCallback
+                0x0000538c       0x90 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .text          0x0000541c        0x0 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.HCDInstanceToDevIndex
+                0x0000541c       0x2c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.GetEventFlag
+                0x00005448       0xc4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDEventEnable
+                0x0000550c       0x50 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000550c                USBHCDEventEnable
+ .text.USBHCDEventDisable
+                0x0000555c       0x54 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000555c                USBHCDEventDisable
+ .text.SendUnknownConnect
+                0x000055b0       0x30 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.FIFOFree
+                0x000055e0       0x7c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.FIFOAlloc
+                0x0000565c      0x148 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDPipeAllocSize
+                0x000057a4      0x704 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000057a4                USBHCDPipeAllocSize
+ .text.USBHCDPipeAlloc
+                0x00005ea8       0x2c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00005ea8                USBHCDPipeAlloc
+ .text.USBHCDPipeConfig
+                0x00005ed4      0x2e8 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00005ed4                USBHCDPipeConfig
+ .text.USBHCDPipeStatus
+                0x000061bc       0x18 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000061bc                USBHCDPipeStatus
+ .text.USBHCDPipeWrite
+                0x000061d4      0x2ec usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000061d4                USBHCDPipeWrite
+ .text.USBHCDPipeSchedule
+                0x000064c0      0x230 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000064c0                USBHCDPipeSchedule
+ .text.USBHCDPipeReadNonBlocking
+                0x000066f0       0x78 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000066f0                USBHCDPipeReadNonBlocking
+ .text.USBHCDPipeDataAck
+                0x00006768       0x5c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00006768                USBHCDPipeDataAck
+ .text.USBHCDPipeRead
+                0x000067c4      0x33c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000067c4                USBHCDPipeRead
+ .text.USBHCDPipeFree
+                0x00006b00      0x3a4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00006b00                USBHCDPipeFree
+ .text.USBHCDInitInternal
+                0x00006ea4      0x358 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDPowerConfigInit
+                0x000071fc       0x20 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000071fc                USBHCDPowerConfigInit
+ .text.USBHCDPowerConfigGet
+                0x0000721c       0x20 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000721c                USBHCDPowerConfigGet
+ .text.USBHCDPowerConfigSet
+                0x0000723c       0xcc usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000723c                USBHCDPowerConfigSet
+ .text.USBHCDPowerAutomatic
+                0x00007308       0x30 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007308                USBHCDPowerAutomatic
+ .text.USBHCDInit
+                0x00007338      0x134 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007338                USBHCDInit
+ .text.USBHCDRegisterDrivers
+                0x0000746c       0x34 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000746c                USBHCDRegisterDrivers
+ .text.USBHCDTerm
+                0x000074a0      0x140 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000074a0                USBHCDTerm
+ .text.USBHCDReset
+                0x000075e0       0x68 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000075e0                USBHCDReset
+ .text.USBHCDSuspend
+                0x00007648       0x1c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007648                USBHCDSuspend
+ .text.USBHCDResume
+                0x00007664       0x48 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007664                USBHCDResume
+ .text.USBHCDGetConfigDescriptor
+                0x000076ac       0xcc usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDGetDeviceDescriptor
+                0x00007778       0x94 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDSetAddress
+                0x0000780c       0x84 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000780c                USBHCDSetAddress
+ .text.USBHCDClearFeature
+                0x00007890      0x128 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDSetConfig
+                0x000079b8       0x58 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000079b8                USBHCDSetConfig
+ .text.USBHCDSetInterface
+                0x00007a10       0x58 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007a10                USBHCDSetInterface
+ .text.USBHostCheckPipes
+                0x00007a68      0x1b0 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007a68                USBHostCheckPipes
+ .text.USBHostIntHandlerInternal
+                0x00007c18      0x830 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00007c18                USBHostIntHandlerInternal
+ .text.USB0HostIntHandler
+                0x00008448       0x28 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00008448                USB0HostIntHandler
+ .text.USBHCDOpenDriver
+                0x00008470      0x14c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.InternalUSBHCDSendEvent
+                0x000085bc       0x88 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000085bc                InternalUSBHCDSendEvent
+ .text.USBHCDDeviceDisconnected
+                0x00008644      0x19c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDMain
+                0x000087e0      0x184 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000087e0                USBHCDMain
+ .text.ProcessUSBDeviceStateMachine
+                0x00008964      0x4a4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDControlTransfer
+                0x00008e08      0x1b0 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00008e08                USBHCDControlTransfer
+ .text.USBHCDHubDeviceConnected
+                0x00008fb8      0x160 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00008fb8                USBHCDHubDeviceConnected
+ .text.USBHCDHubDeviceDisconnected
+                0x00009118       0x2c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00009118                USBHCDHubDeviceDisconnected
+ .text.USBHCDEnumHandler
+                0x00009144      0x234 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDEP0StateTx
+                0x00009378       0xc4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .text.USBHCDDevHubPort
+                0x0000943c       0x48 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000943c                USBHCDDevHubPort
+ .text.USBHCDDevAddress
+                0x00009484       0x48 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x00009484                USBHCDDevAddress
+ .text.USBHCDDevClass
+                0x000094cc       0x80 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000094cc                USBHCDDevClass
+ .text.USBHCDDevSubClass
+                0x0000954c       0x80 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x0000954c                USBHCDDevSubClass
+ .text.USBHCDDevProtocol
+                0x000095cc       0x80 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x000095cc                USBHCDDevProtocol
+ .text          0x0000964c        0x0 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .text.USBOTGSetMode
+                0x0000964c       0xd4 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .text.USBStackModeSet
+                0x00009720       0x5c usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x00009720                USBStackModeSet
+ .text.USB0DualModeIntHandler
+                0x0000977c       0x78 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x0000977c                USB0DualModeIntHandler
+ .text.USBDualModeInit
+                0x000097f4       0xa0 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x000097f4                USBDualModeInit
+ .text.USBDualModeTerm
+                0x00009894       0x38 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x00009894                USBDualModeTerm
+ .text.USBOTGModeTerm
+                0x000098cc       0x40 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x000098cc                USBOTGModeTerm
+ .text.USBOTGModeInit
+                0x0000990c       0xd8 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x0000990c                USBOTGModeInit
+ .text.USBOTGRemovePower
+                0x000099e4       0x58 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .text.USBOTGPollRate
+                0x00009a3c       0x20 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x00009a3c                USBOTGPollRate
+ .text.USB0OTGModeIntHandler
+                0x00009a5c      0x164 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x00009a5c                USB0OTGModeIntHandler
+ .text.OTGDeviceDisconnect
+                0x00009bc0       0x38 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x00009bc0                OTGDeviceDisconnect
+ .text.USBOTGMain
+                0x00009bf8      0x114 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x00009bf8                USBOTGMain
+ .text          0x00009d0c        0x0 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .text.InternalUSBTickInit
+                0x00009d0c       0x68 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x00009d0c                InternalUSBTickInit
+ .text.InternalUSBTickReset
+                0x00009d74       0x18 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x00009d74                InternalUSBTickReset
+ .text.InternalUSBRegisterTickHandler
+                0x00009d8c       0x70 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x00009d8c                InternalUSBRegisterTickHandler
+ .text.InternalUSBStartOfFrameTick
+                0x00009dfc       0x74 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x00009dfc                InternalUSBStartOfFrameTick
+ .text          0x00009e70        0x0 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDCDInit
+                0x00009e70      0x208 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x00009e70                USBDCDInit
+ .text.USBDCDTerm
+                0x0000a078       0x8c usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a078                USBDCDTerm
+ .text.USBDCDRequestDataEP0
+                0x0000a104       0x48 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a104                USBDCDRequestDataEP0
+ .text.USBDCDSendDataEP0
+                0x0000a14c       0x40 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a14c                USBDCDSendDataEP0
+ .text.USBDCDSetDefaultConfiguration
+                0x0000a18c       0x20 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a18c                USBDCDSetDefaultConfiguration
+ .text.USBDCDStallEP0
+                0x0000a1ac       0x34 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a1ac                USBDCDStallEP0
+ .text.USBDCDPowerStatusSet
+                0x0000a1e0       0x64 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a1e0                USBDCDPowerStatusSet
+ .text.USBDCDRemoteWakeupRequest
+                0x0000a244       0x70 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a244                USBDCDRemoteWakeupRequest
+ .text.USBDeviceResumeTickHandler
+                0x0000a2b4       0xa8 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a2b4                USBDeviceResumeTickHandler
+ .text.USBDReadAndDispatchRequest
+                0x0000a35c       0xcc usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDeviceEnumHandler
+                0x0000a428      0x19c usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a428                USBDeviceEnumHandler
+ .text.USBDeviceEnumResetHandler
+                0x0000a5c4       0x74 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000a5c4                USBDeviceEnumResetHandler
+ .text.USBDGetStatus
+                0x0000a638       0xcc usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDClearFeature
+                0x0000a704      0x11c usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDSetFeature
+                0x0000a820       0xe4 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDSetAddress
+                0x0000a904       0x40 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDGetDescriptor
+                0x0000a944      0x19c usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDStringIndexFromRequest
+                0x0000aae0       0xf4 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDSetDescriptor
+                0x0000abd4       0x30 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDGetConfiguration
+                0x0000ac04       0x5c usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDSetConfiguration
+                0x0000ac60       0xfc usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDGetInterface
+                0x0000ad5c       0x78 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDSetInterface
+                0x0000add4       0xf8 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDSyncFrame
+                0x0000aecc       0x30 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDEP0StateTx
+                0x0000aefc      0x118 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDEP0StateTxConfig
+                0x0000b014      0x2f8 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .text.USBDeviceIntHandlerInternal
+                0x0000b30c      0x14c usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x0000b30c                USBDeviceIntHandlerInternal
+ .text          0x0000b458        0x0 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .text.USBDescGetNum
+                0x0000b458       0x64 usblib/gcc/libusb-cm3.a(usbdesc.o)
+                0x0000b458                USBDescGetNum
+ .text.USBDescGet
+                0x0000b4bc       0x74 usblib/gcc/libusb-cm3.a(usbdesc.o)
+                0x0000b4bc                USBDescGet
+ .text.USBDescGetNumAlternateInterfaces
+                0x0000b530       0x68 usblib/gcc/libusb-cm3.a(usbdesc.o)
+                0x0000b530                USBDescGetNumAlternateInterfaces
+ .text.USBDescGetAlternateInterface
+                0x0000b598       0x78 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .text.USBDescGetInterface
+                0x0000b610       0x48 usblib/gcc/libusb-cm3.a(usbdesc.o)
+                0x0000b610                USBDescGetInterface
+ .text.USBDescGetInterfaceEndpoint
+                0x0000b658       0x38 usblib/gcc/libusb-cm3.a(usbdesc.o)
+                0x0000b658                USBDescGetInterfaceEndpoint
+ .text          0x0000b690        0x0 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubSetPortFeature
+                0x0000b690       0x60 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubClearPortFeature
+                0x0000b6f0       0x60 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubGetPortStatus
+                0x0000b750       0x8c usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubIntINCallback
+                0x0000b7dc       0xa8 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.GetHubDescriptor
+                0x0000b884       0x70 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubDriverOpen
+                0x0000b8f4      0x294 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubDriverClose
+                0x0000bb88      0x1b8 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubDriverReset
+                0x0000bd40       0xdc usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubDriverDeviceReset
+                0x0000be1c       0x70 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubDriverDeviceConnect
+                0x0000be8c       0xac usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.HubDriverDeviceDisconnect
+                0x0000bf38      0x17c usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .text.USBHHubMain
+                0x0000c0b4      0x3fc usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x0000c0b4                USBHHubMain
+ .text.USBHHubEnumerationComplete
+                0x0000c4b0       0x50 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x0000c4b0                USBHHubEnumerationComplete
+ .text.USBHHubEnumerationError
+                0x0000c500       0x50 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x0000c500                USBHHubEnumerationError
+ .text.USBHHubOpen
+                0x0000c550       0xd8 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x0000c550                USBHHubOpen
+ .text.USBHHubClose
+                0x0000c628       0x24 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x0000c628                USBHHubClose
+ .text.USBHHubInit
+                0x0000c64c       0x34 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x0000c64c                USBHHubInit
+ .text          0x0000c680        0x0 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .text.NextConfigDescGet
+                0x0000c680       0x84 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .text.ConfigAlternateInterfaceGet
+                0x0000c704       0x78 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .text.USBDCDConfigDescGetSize
+                0x0000c77c       0x50 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                0x0000c77c                USBDCDConfigDescGetSize
+ .text.USBDCDConfigDescGetNum
+                0x0000c7cc       0x6c usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                0x0000c7cc                USBDCDConfigDescGetNum
+ .text.USBDCDConfigDescGet
+                0x0000c838       0xbc usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                0x0000c838                USBDCDConfigDescGet
+ .text.USBDCDConfigGetNumAlternateInterfaces
+                0x0000c8f4       0x60 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                0x0000c8f4                USBDCDConfigGetNumAlternateInterfaces
+ .text.USBDCDConfigGetInterface
+                0x0000c954       0x44 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                0x0000c954                USBDCDConfigGetInterface
+ .text.USBDCDConfigGetInterfaceEndpoint
+                0x0000c998       0x84 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                0x0000c998                USBDCDConfigGetInterfaceEndpoint
+ .text          0x0000ca1c        0x0 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .text.GetEndpointFIFOSize
+                0x0000ca1c       0x94 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .text.GetEPDescriptorType
+                0x0000cab0       0xa8 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .text.USBDeviceConfig
+                0x0000cb58      0x3e0 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+                0x0000cb58                USBDeviceConfig
+ .text.USBDeviceConfigAlternate
+                0x0000cf38      0x12c usblib/gcc/libusb-cm3.a(usbdconfig.o)
+                0x0000cf38                USBDeviceConfigAlternate
+ .text          0x0000d064        0x0 driverlib/gcc/libdriver-cm3.a(adc.o)
+ .text.ADCIntRegister
+                0x0000d064       0x28 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d064                ADCIntRegister
+ .text.ADCIntUnregister
+                0x0000d08c       0x24 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d08c                ADCIntUnregister
+ .text.ADCIntDisable
+                0x0000d0b0       0x10 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d0b0                ADCIntDisable
+ .text.ADCIntEnable
+                0x0000d0c0       0x10 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d0c0                ADCIntEnable
+ .text.ADCIntStatus
+                0x0000d0d0       0x34 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d0d0                ADCIntStatus
+ .text.ADCIntClear
+                0x0000d104        0xa driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d104                ADCIntClear
+ .text.ADCSequenceEnable
+                0x0000d10e        0xe driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d10e                ADCSequenceEnable
+ .text.ADCSequenceDisable
+                0x0000d11c       0x10 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d11c                ADCSequenceDisable
+ .text.ADCSequenceConfigure
+                0x0000d12c       0x2e driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d12c                ADCSequenceConfigure
+ .text.ADCSequenceStepConfigure
+                0x0000d15a       0x7c driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d15a                ADCSequenceStepConfigure
+ .text.ADCSequenceOverflow
+                0x0000d1d6        0xc driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d1d6                ADCSequenceOverflow
+ .text.ADCSequenceOverflowClear
+                0x0000d1e2        0xa driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d1e2                ADCSequenceOverflowClear
+ .text.ADCSequenceUnderflow
+                0x0000d1ec        0xc driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d1ec                ADCSequenceUnderflow
+ .text.ADCSequenceUnderflowClear
+                0x0000d1f8        0xa driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d1f8                ADCSequenceUnderflowClear
+ .text.ADCSequenceDataGet
+                0x0000d202       0x1e driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d202                ADCSequenceDataGet
+ .text.ADCProcessorTrigger
+                0x0000d220       0x18 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d220                ADCProcessorTrigger
+ .text.ADCSoftwareOversampleConfigure
+                0x0000d238       0x18 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d238                ADCSoftwareOversampleConfigure
+ .text.ADCSoftwareOversampleStepConfigure
+                0x0000d250       0x80 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d250                ADCSoftwareOversampleStepConfigure
+ .text.ADCSoftwareOversampleDataGet
+                0x0000d2d0       0x34 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d2d0                ADCSoftwareOversampleDataGet
+ .text.ADCHardwareOversampleConfigure
+                0x0000d304       0x10 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d304                ADCHardwareOversampleConfigure
+ .text.ADCComparatorConfigure
+                0x0000d314        0xa driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d314                ADCComparatorConfigure
+ .text.ADCComparatorRegionSet
+                0x0000d31e        0xe driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d31e                ADCComparatorRegionSet
+ .text.ADCComparatorReset
+                0x0000d32c       0x1e driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d32c                ADCComparatorReset
+ .text.ADCComparatorIntDisable
+                0x0000d34a       0x12 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d34a                ADCComparatorIntDisable
+ .text.ADCComparatorIntEnable
+                0x0000d35c       0x10 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d35c                ADCComparatorIntEnable
+ .text.ADCComparatorIntStatus
+                0x0000d36c        0x4 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d36c                ADCComparatorIntStatus
+ .text.ADCComparatorIntClear
+                0x0000d370        0x4 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d370                ADCComparatorIntClear
+ .text.ADCReferenceSet
+                0x0000d374        0xc driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d374                ADCReferenceSet
+ .text.ADCReferenceGet
+                0x0000d380        0x8 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d380                ADCReferenceGet
+ .text.ADCResolutionSet
+                0x0000d388        0xc driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d388                ADCResolutionSet
+ .text.ADCResolutionGet
+                0x0000d394        0x8 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d394                ADCResolutionGet
+ .text.ADCPhaseDelaySet
+                0x0000d39c        0x4 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d39c                ADCPhaseDelaySet
+ .text.ADCPhaseDelayGet
+                0x0000d3a0        0x4 driverlib/gcc/libdriver-cm3.a(adc.o)
+                0x0000d3a0                ADCPhaseDelayGet
+ .text          0x0000d3a4        0x0 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .text.GPIOGetIntNumber
+                0x0000d3a4      0x118 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .text.GPIODirModeSet
+                0x0000d4bc       0x2e driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d4bc                GPIODirModeSet
+ .text.GPIODirModeGet
+                0x0000d4ea       0x24 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d4ea                GPIODirModeGet
+ .text.GPIOIntTypeSet
+                0x0000d50e       0x42 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d50e                GPIOIntTypeSet
+ .text.GPIOIntTypeGet
+                0x0000d550       0x36 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d550                GPIOIntTypeGet
+ .text.GPIOPadConfigSet
+                0x0000d586       0xbc driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d586                GPIOPadConfigSet
+ .text.GPIOPadConfigGet
+                0x0000d642       0x7e driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d642                GPIOPadConfigGet
+ .text.GPIOPinIntEnable
+                0x0000d6c0        0xc driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d6c0                GPIOPinIntEnable
+ .text.GPIOPinIntDisable
+                0x0000d6cc        0xe driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d6cc                GPIOPinIntDisable
+ .text.GPIOPinIntStatus
+                0x0000d6da        0xe driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d6da                GPIOPinIntStatus
+ .text.GPIOPinIntClear
+                0x0000d6e8        0x6 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d6e8                GPIOPinIntClear
+ .text.GPIOPortIntRegister
+                0x0000d6ee       0x1a driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d6ee                GPIOPortIntRegister
+ .text.GPIOPortIntUnregister
+                0x0000d708       0x16 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d708                GPIOPortIntUnregister
+ .text.GPIOPinRead
+                0x0000d71e        0x6 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d71e                GPIOPinRead
+ .text.GPIOPinWrite
+                0x0000d724        0x6 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d724                GPIOPinWrite
+ .text.GPIOPinTypeADC
+                0x0000d72a       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d72a                GPIOPinTypeADC
+ .text.GPIOPinTypeCAN
+                0x0000d746       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d746                GPIOPinTypeCAN
+ .text.GPIOPinTypeComparator
+                0x0000d762       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d762                GPIOPinTypeComparator
+ .text.GPIOPinTypeEPI
+                0x0000d77e       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d77e                GPIOPinTypeEPI
+ .text.GPIOPinTypeEthernetLED
+                0x0000d79a       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d79a                GPIOPinTypeEthernetLED
+ .text.GPIOPinTypeEthernetMII
+                0x0000d7b6       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d7b6                GPIOPinTypeEthernetMII
+ .text.GPIOPinTypeFan
+                0x0000d7d2       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d7d2                GPIOPinTypeFan
+ .text.GPIOPinTypeGPIOInput
+                0x0000d7ee       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d7ee                GPIOPinTypeGPIOInput
+ .text.GPIOPinTypeGPIOOutput
+                0x0000d80a       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d80a                GPIOPinTypeGPIOOutput
+ .text.GPIOPinTypeGPIOOutputOD
+                0x0000d826       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d826                GPIOPinTypeGPIOOutputOD
+ .text.GPIOPinTypeI2C
+                0x0000d842       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d842                GPIOPinTypeI2C
+ *fill*         0x0000d85e        0x2 00
+ .text.GPIOPinTypeI2CSCL
+                0x0000d860       0x84 driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d860                GPIOPinTypeI2CSCL
+ .text.GPIOPinTypeI2S
+                0x0000d8e4       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d8e4                GPIOPinTypeI2S
+ .text.GPIOPinTypeLPC
+                0x0000d900       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d900                GPIOPinTypeLPC
+ .text.GPIOPinTypePECIRx
+                0x0000d91c       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d91c                GPIOPinTypePECIRx
+ .text.GPIOPinTypePECITx
+                0x0000d938       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d938                GPIOPinTypePECITx
+ .text.GPIOPinTypePWM
+                0x0000d954       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d954                GPIOPinTypePWM
+ .text.GPIOPinTypeQEI
+                0x0000d970       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d970                GPIOPinTypeQEI
+ .text.GPIOPinTypeSSI
+                0x0000d98c       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d98c                GPIOPinTypeSSI
+ .text.GPIOPinTypeTimer
+                0x0000d9a8       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d9a8                GPIOPinTypeTimer
+ .text.GPIOPinTypeUART
+                0x0000d9c4       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d9c4                GPIOPinTypeUART
+ .text.GPIOPinTypeUSBAnalog
+                0x0000d9e0       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d9e0                GPIOPinTypeUSBAnalog
+ .text.GPIOPinTypeUSBDigital
+                0x0000d9fc       0x1c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000d9fc                GPIOPinTypeUSBDigital
+ .text.GPIOPinConfigure
+                0x0000da18       0x4c driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000da18                GPIOPinConfigure
+ .text.GPIODMATriggerEnable
+                0x0000da64        0xc driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000da64                GPIODMATriggerEnable
+ .text.GPIODMATriggerDisable
+                0x0000da70        0xe driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000da70                GPIODMATriggerDisable
+ .text.GPIOADCTriggerEnable
+                0x0000da7e        0xc driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000da7e                GPIOADCTriggerEnable
+ .text.GPIOADCTriggerDisable
+                0x0000da8a        0xe driverlib/gcc/libdriver-cm3.a(gpio.o)
+                0x0000da8a                GPIOADCTriggerDisable
+ .text          0x0000da98        0x0 driverlib/gcc/libdriver-cm3.a(i2s.o)
+ .text.I2STxEnable
+                0x0000da98       0x12 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000da98                I2STxEnable
+ .text.I2STxDisable
+                0x0000daaa        0xe driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000daaa                I2STxDisable
+ .text.I2STxDataPut
+                0x0000dab8        0xa driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dab8                I2STxDataPut
+ .text.I2STxDataPutNonBlocking
+                0x0000dac2       0x10 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dac2                I2STxDataPutNonBlocking
+ .text.I2STxConfigSet
+                0x0000dad2       0x1a driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dad2                I2STxConfigSet
+ .text.I2STxFIFOLimitSet
+                0x0000daec        0x4 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000daec                I2STxFIFOLimitSet
+ .text.I2STxFIFOLimitGet
+                0x0000daf0        0x4 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000daf0                I2STxFIFOLimitGet
+ .text.I2STxFIFOLevelGet
+                0x0000daf4        0x4 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000daf4                I2STxFIFOLevelGet
+ .text.I2SRxEnable
+                0x0000daf8       0x14 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000daf8                I2SRxEnable
+ .text.I2SRxDisable
+                0x0000db0c        0xe driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db0c                I2SRxDisable
+ .text.I2SRxDataGet
+                0x0000db1a       0x10 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db1a                I2SRxDataGet
+ .text.I2SRxDataGetNonBlocking
+                0x0000db2a       0x14 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db2a                I2SRxDataGetNonBlocking
+ .text.I2SRxConfigSet
+                0x0000db3e       0x36 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db3e                I2SRxConfigSet
+ .text.I2SRxFIFOLimitSet
+                0x0000db74        0x6 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db74                I2SRxFIFOLimitSet
+ .text.I2SRxFIFOLimitGet
+                0x0000db7a        0xc driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db7a                I2SRxFIFOLimitGet
+ .text.I2SRxFIFOLevelGet
+                0x0000db86        0x6 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db86                I2SRxFIFOLevelGet
+ .text.I2STxRxEnable
+                0x0000db8c       0x16 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000db8c                I2STxRxEnable
+ .text.I2STxRxDisable
+                0x0000dba2        0xe driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dba2                I2STxRxDisable
+ .text.I2STxRxConfigSet
+                0x0000dbb0       0x48 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dbb0                I2STxRxConfigSet
+ .text.I2SMasterClockSelect
+                0x0000dbf8       0x10 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dbf8                I2SMasterClockSelect
+ .text.I2SIntEnable
+                0x0000dc08        0xc driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dc08                I2SIntEnable
+ .text.I2SIntDisable
+                0x0000dc14        0xe driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dc14                I2SIntDisable
+ .text.I2SIntStatus
+                0x0000dc22        0xe driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dc22                I2SIntStatus
+ .text.I2SIntClear
+                0x0000dc30        0x6 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dc30                I2SIntClear
+ .text.I2SIntRegister
+                0x0000dc36       0x12 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dc36                I2SIntRegister
+ .text.I2SIntUnregister
+                0x0000dc48       0x12 driverlib/gcc/libdriver-cm3.a(i2s.o)
+                0x0000dc48                I2SIntUnregister
+ .text          0x0000dc5a        0x0 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .text.IntDefaultHandler
+                0x0000dc5a        0x2 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .text.IntMasterEnable
+                0x0000dc5c        0xa driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dc5c                IntMasterEnable
+ .text.IntMasterDisable
+                0x0000dc66        0xa driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dc66                IntMasterDisable
+ .text.IntRegister
+                0x0000dc70       0x34 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dc70                IntRegister
+ .text.IntUnregister
+                0x0000dca4       0x14 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dca4                IntUnregister
+ .text.IntPriorityGroupingSet
+                0x0000dcb8       0x1c driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dcb8                IntPriorityGroupingSet
+ .text.IntPriorityGroupingGet
+                0x0000dcd4       0x24 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dcd4                IntPriorityGroupingGet
+ .text.IntPrioritySet
+                0x0000dcf8       0x2c driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dcf8                IntPrioritySet
+ .text.IntPriorityGet
+                0x0000dd24       0x1c driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dd24                IntPriorityGet
+ .text.IntEnable
+                0x0000dd40       0x60 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dd40                IntEnable
+ .text.IntDisable
+                0x0000dda0       0x60 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000dda0                IntDisable
+ .text.IntIsEnabled
+                0x0000de00       0x64 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000de00                IntIsEnabled
+ .text.IntPendSet
+                0x0000de64       0x50 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000de64                IntPendSet
+ .text.IntPendClear
+                0x0000deb4       0x40 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000deb4                IntPendClear
+ .text.IntPriorityMaskSet
+                0x0000def4        0x4 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000def4                IntPriorityMaskSet
+ .text.IntPriorityMaskGet
+                0x0000def8        0x4 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+                0x0000def8                IntPriorityMaskGet
+ .text          0x0000defc        0x0 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .text.SysCtlPeripheralMapToNew
+                0x0000defc       0x24 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .text.SysCtlSRAMSizeGet
+                0x0000df20       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000df20                SysCtlSRAMSizeGet
+ .text.SysCtlFlashSizeGet
+                0x0000df34       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000df34                SysCtlFlashSizeGet
+ .text.SysCtlPinPresent
+                0x0000df48       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000df48                SysCtlPinPresent
+ .text.SysCtlPeripheralPresent
+                0x0000df5c       0x6c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000df5c                SysCtlPeripheralPresent
+ .text.SysCtlPeripheralReady
+                0x0000dfc8       0x28 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000dfc8                SysCtlPeripheralReady
+ .text.SysCtlPeripheralPowerOn
+                0x0000dff0       0x28 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000dff0                SysCtlPeripheralPowerOn
+ .text.SysCtlPeripheralPowerOff
+                0x0000e018       0x28 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e018                SysCtlPeripheralPowerOff
+ .text.SysCtlPeripheralReset
+                0x0000e040       0x7c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e040                SysCtlPeripheralReset
+ .text.SysCtlPeripheralEnable
+                0x0000e0bc       0x4c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e0bc                SysCtlPeripheralEnable
+ .text.SysCtlPeripheralDisable
+                0x0000e108       0x4c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e108                SysCtlPeripheralDisable
+ .text.SysCtlPeripheralSleepEnable
+                0x0000e154       0x4c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e154                SysCtlPeripheralSleepEnable
+ .text.SysCtlPeripheralSleepDisable
+                0x0000e1a0       0x4c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e1a0                SysCtlPeripheralSleepDisable
+ .text.SysCtlPeripheralDeepSleepEnable
+                0x0000e1ec       0x4c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e1ec                SysCtlPeripheralDeepSleepEnable
+ .text.SysCtlPeripheralDeepSleepDisable
+                0x0000e238       0x4c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e238                SysCtlPeripheralDeepSleepDisable
+ .text.SysCtlPeripheralClockGating
+                0x0000e284       0x18 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e284                SysCtlPeripheralClockGating
+ .text.SysCtlIntRegister
+                0x0000e29c       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e29c                SysCtlIntRegister
+ .text.SysCtlIntUnregister
+                0x0000e2b0       0x12 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e2b0                SysCtlIntUnregister
+ *fill*         0x0000e2c2        0x2 00
+ .text.SysCtlIntEnable
+                0x0000e2c4       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e2c4                SysCtlIntEnable
+ .text.SysCtlIntDisable
+                0x0000e2d4       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e2d4                SysCtlIntDisable
+ .text.SysCtlIntClear
+                0x0000e2e4        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e2e4                SysCtlIntClear
+ .text.SysCtlIntStatus
+                0x0000e2f0       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e2f0                SysCtlIntStatus
+ .text.SysCtlLDOSet
+                0x0000e304        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e304                SysCtlLDOSet
+ .text.SysCtlLDOGet
+                0x0000e310        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e310                SysCtlLDOGet
+ .text.SysCtlLDOConfigSet
+                0x0000e31c        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e31c                SysCtlLDOConfigSet
+ .text.SysCtlReset
+                0x0000e328       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e328                SysCtlReset
+ .text.SysCtlSleep
+                0x0000e338        0x4 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e338                SysCtlSleep
+ .text.SysCtlDeepSleep
+                0x0000e33c       0x20 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e33c                SysCtlDeepSleep
+ .text.SysCtlResetCauseGet
+                0x0000e35c        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e35c                SysCtlResetCauseGet
+ .text.SysCtlResetCauseClear
+                0x0000e368       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e368                SysCtlResetCauseClear
+ .text.SysCtlBrownOutConfigSet
+                0x0000e378       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e378                SysCtlBrownOutConfigSet
+ .text.SysCtlDelay
+                0x0000e388        0x8 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e388                SysCtlDelay
+ .text.SysCtlMOSCConfigSet
+                0x0000e390        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e390                SysCtlMOSCConfigSet
+ .text.SysCtlPIOSCCalibrate
+                0x0000e39c       0x48 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e39c                SysCtlPIOSCCalibrate
+ .text.SysCtlClockSet
+                0x0000e3e4      0x160 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e3e4                SysCtlClockSet
+ .text.SysCtlClockGet
+                0x0000e544      0x1b4 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e544                SysCtlClockGet
+ .text.SysCtlDeepSleepClockSet
+                0x0000e6f8        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e6f8                SysCtlDeepSleepClockSet
+ .text.SysCtlPWMClockSet
+                0x0000e704       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e704                SysCtlPWMClockSet
+ .text.SysCtlPWMClockGet
+                0x0000e718       0x18 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e718                SysCtlPWMClockGet
+ .text.SysCtlADCSpeedSet
+                0x0000e730       0x20 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e730                SysCtlADCSpeedSet
+ .text.SysCtlADCSpeedGet
+                0x0000e750       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e750                SysCtlADCSpeedGet
+ .text.SysCtlIOSCVerificationSet
+                0x0000e760       0x18 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e760                SysCtlIOSCVerificationSet
+ .text.SysCtlMOSCVerificationSet
+                0x0000e778       0x18 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e778                SysCtlMOSCVerificationSet
+ .text.SysCtlPLLVerificationSet
+                0x0000e790       0x18 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e790                SysCtlPLLVerificationSet
+ .text.SysCtlClkVerificationClear
+                0x0000e7a8       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e7a8                SysCtlClkVerificationClear
+ .text.SysCtlGPIOAHBEnable
+                0x0000e7b8       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e7b8                SysCtlGPIOAHBEnable
+ .text.SysCtlGPIOAHBDisable
+                0x0000e7cc       0x14 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e7cc                SysCtlGPIOAHBDisable
+ .text.SysCtlUSBPLLEnable
+                0x0000e7e0       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e7e0                SysCtlUSBPLLEnable
+ .text.SysCtlUSBPLLDisable
+                0x0000e7f0       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e7f0                SysCtlUSBPLLDisable
+ .text.SysCtlI2SMClkSet
+                0x0000e800       0xd4 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x0000e800                SysCtlI2SMClkSet
+ .text          0x0000e8d4        0x0 driverlib/gcc/libdriver-cm3.a(systick.o)
+ .text.SysTickEnable
+                0x0000e8d4       0x10 driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e8d4                SysTickEnable
+ .text.SysTickDisable
+                0x0000e8e4       0x10 driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e8e4                SysTickDisable
+ .text.SysTickIntRegister
+                0x0000e8f4       0x1c driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e8f4                SysTickIntRegister
+ .text.SysTickIntUnregister
+                0x0000e910       0x14 driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e910                SysTickIntUnregister
+ .text.SysTickIntEnable
+                0x0000e924       0x10 driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e924                SysTickIntEnable
+ .text.SysTickIntDisable
+                0x0000e934       0x10 driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e934                SysTickIntDisable
+ .text.SysTickPeriodSet
+                0x0000e944        0xc driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e944                SysTickPeriodSet
+ .text.SysTickPeriodGet
+                0x0000e950        0xc driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e950                SysTickPeriodGet
+ .text.SysTickValueGet
+                0x0000e95c        0xc driverlib/gcc/libdriver-cm3.a(systick.o)
+                0x0000e95c                SysTickValueGet
+ .text          0x0000e968        0x0 driverlib/gcc/libdriver-cm3.a(timer.o)
+ .text.TimerEnable
+                0x0000e968       0x10 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e968                TimerEnable
+ .text.TimerDisable
+                0x0000e978       0x10 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e978                TimerDisable
+ .text.TimerConfigure
+                0x0000e988       0x24 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e988                TimerConfigure
+ .text.TimerControlLevel
+                0x0000e9ac       0x1e driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e9ac                TimerControlLevel
+ .text.TimerControlTrigger
+                0x0000e9ca       0x1e driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e9ca                TimerControlTrigger
+ .text.TimerControlEvent
+                0x0000e9e8       0x14 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e9e8                TimerControlEvent
+ .text.TimerControlStall
+                0x0000e9fc       0x1e driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000e9fc                TimerControlStall
+ .text.TimerControlWaitOnTrigger
+                0x0000ea1a       0x2e driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea1a                TimerControlWaitOnTrigger
+ .text.TimerRTCEnable
+                0x0000ea48        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea48                TimerRTCEnable
+ .text.TimerRTCDisable
+                0x0000ea52        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea52                TimerRTCDisable
+ .text.TimerPrescaleSet
+                0x0000ea5c       0x12 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea5c                TimerPrescaleSet
+ .text.TimerPrescaleGet
+                0x0000ea6e        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea6e                TimerPrescaleGet
+ .text.TimerPrescaleMatchSet
+                0x0000ea78       0x12 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea78                TimerPrescaleMatchSet
+ .text.TimerPrescaleMatchGet
+                0x0000ea8a        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea8a                TimerPrescaleMatchGet
+ .text.TimerLoadSet
+                0x0000ea94       0x12 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ea94                TimerLoadSet
+ .text.TimerLoadGet
+                0x0000eaa6        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eaa6                TimerLoadGet
+ .text.TimerLoadSet64
+                0x0000eab0        0x6 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eab0                TimerLoadSet64
+ .text.TimerLoadGet64
+                0x0000eab6       0x18 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eab6                TimerLoadGet64
+ .text.TimerValueGet
+                0x0000eace        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eace                TimerValueGet
+ .text.TimerValueGet64
+                0x0000ead8       0x18 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ead8                TimerValueGet64
+ .text.TimerMatchSet
+                0x0000eaf0       0x12 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eaf0                TimerMatchSet
+ .text.TimerMatchGet
+                0x0000eb02        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eb02                TimerMatchGet
+ .text.TimerMatchSet64
+                0x0000eb0c        0x6 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eb0c                TimerMatchSet64
+ .text.TimerMatchGet64
+                0x0000eb12       0x18 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eb12                TimerMatchGet64
+ *fill*         0x0000eb2a        0x2 00
+ .text.TimerIntRegister
+                0x0000eb2c       0x58 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eb2c                TimerIntRegister
+ .text.TimerIntUnregister
+                0x0000eb84       0x54 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000eb84                TimerIntUnregister
+ .text.TimerIntEnable
+                0x0000ebd8        0x8 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ebd8                TimerIntEnable
+ .text.TimerIntDisable
+                0x0000ebe0        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ebe0                TimerIntDisable
+ .text.TimerIntStatus
+                0x0000ebea        0xa driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ebea                TimerIntStatus
+ .text.TimerIntClear
+                0x0000ebf4        0x4 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ebf4                TimerIntClear
+ .text.TimerSynchronize
+                0x0000ebf8        0x4 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ebf8                TimerSynchronize
+ .text.TimerQuiesce
+                0x0000ebfc       0x3a driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x0000ebfc                TimerQuiesce
+ .text          0x0000ec36        0x0 driverlib/gcc/libdriver-cm3.a(udma.o)
+ *fill*         0x0000ec36        0x2 00
+ .text.uDMAEnable
+                0x0000ec38        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec38                uDMAEnable
+ .text.uDMADisable
+                0x0000ec44        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec44                uDMADisable
+ .text.uDMAErrorStatusGet
+                0x0000ec50        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec50                uDMAErrorStatusGet
+ .text.uDMAErrorStatusClear
+                0x0000ec5c        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec5c                uDMAErrorStatusClear
+ .text.uDMAChannelEnable
+                0x0000ec68       0x14 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec68                uDMAChannelEnable
+ .text.uDMAChannelDisable
+                0x0000ec7c       0x14 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec7c                uDMAChannelDisable
+ .text.uDMAChannelIsEnabled
+                0x0000ec90       0x1c driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ec90                uDMAChannelIsEnabled
+ .text.uDMAControlBaseSet
+                0x0000ecac        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ecac                uDMAControlBaseSet
+ .text.uDMAControlBaseGet
+                0x0000ecb8        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ecb8                uDMAControlBaseGet
+ .text.uDMAControlAlternateBaseGet
+                0x0000ecc4        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ecc4                uDMAControlAlternateBaseGet
+ .text.uDMAChannelRequest
+                0x0000ecd0       0x14 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ecd0                uDMAChannelRequest
+ .text.uDMAChannelAttributeEnable
+                0x0000ece4       0x50 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ece4                uDMAChannelAttributeEnable
+ .text.uDMAChannelAttributeDisable
+                0x0000ed34       0x50 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ed34                uDMAChannelAttributeDisable
+ .text.uDMAChannelAttributeGet
+                0x0000ed84       0x4c driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ed84                uDMAChannelAttributeGet
+ .text.uDMAChannelControlSet
+                0x0000edd0       0x20 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000edd0                uDMAChannelControlSet
+ .text.uDMAChannelTransferSet
+                0x0000edf0       0x88 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000edf0                uDMAChannelTransferSet
+ .text.uDMAChannelScatterGatherSet
+                0x0000ee78       0x40 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ee78                uDMAChannelScatterGatherSet
+ .text.uDMAChannelSizeGet
+                0x0000eeb8       0x20 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000eeb8                uDMAChannelSizeGet
+ .text.uDMAChannelModeGet
+                0x0000eed8       0x24 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000eed8                uDMAChannelModeGet
+ .text.uDMAChannelSelectSecondary
+                0x0000eefc       0x10 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000eefc                uDMAChannelSelectSecondary
+ .text.uDMAChannelSelectDefault
+                0x0000ef0c       0x10 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ef0c                uDMAChannelSelectDefault
+ .text.uDMAIntRegister
+                0x0000ef1c       0x12 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ef1c                uDMAIntRegister
+ .text.uDMAIntUnregister
+                0x0000ef2e       0x12 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ef2e                uDMAIntUnregister
+ .text.uDMAIntStatus
+                0x0000ef40        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ef40                uDMAIntStatus
+ .text.uDMAIntClear
+                0x0000ef4c        0xc driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ef4c                uDMAIntClear
+ .text.uDMAChannelAssign
+                0x0000ef58       0x30 driverlib/gcc/libdriver-cm3.a(udma.o)
+                0x0000ef58                uDMAChannelAssign
+ .text          0x0000ef88        0x0 driverlib/gcc/libdriver-cm3.a(usb.o)
+ .text.USBHostSuspend
+                0x0000ef88        0xa driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000ef88                USBHostSuspend
+ .text.USBHostReset
+                0x0000ef92       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000ef92                USBHostReset
+ .text.USBHostResume
+                0x0000efa4       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000efa4                USBHostResume
+ .text.USBHostSpeedGet
+                0x0000efb6       0x26 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000efb6                USBHostSpeedGet
+ .text.USBIntStatus
+                0x0000efdc       0x44 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000efdc                USBIntStatus
+ .text.USBIntDisable
+                0x0000f020       0x48 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f020                USBIntDisable
+ .text.USBIntEnable
+                0x0000f068       0x48 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f068                USBIntEnable
+ .text.USBIntDisableControl
+                0x0000f0b0       0x28 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f0b0                USBIntDisableControl
+ .text.USBIntEnableControl
+                0x0000f0d8       0x28 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f0d8                USBIntEnableControl
+ .text.USBIntStatusControl
+                0x0000f100       0x38 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f100                USBIntStatusControl
+ .text.USBIntDisableEndpoint
+                0x0000f138       0x1a driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f138                USBIntDisableEndpoint
+ .text.USBIntEnableEndpoint
+                0x0000f152       0x1a driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f152                USBIntEnableEndpoint
+ .text.USBIntStatusEndpoint
+                0x0000f16c        0xc driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f16c                USBIntStatusEndpoint
+ .text.USBIntRegister
+                0x0000f178       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f178                USBIntRegister
+ .text.USBIntUnregister
+                0x0000f18a       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f18a                USBIntUnregister
+ .text.USBEndpointStatus
+                0x0000f19c       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f19c                USBEndpointStatus
+ .text.USBHostEndpointStatusClear
+                0x0000f1ae       0x2c driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f1ae                USBHostEndpointStatusClear
+ .text.USBDevEndpointStatusClear
+                0x0000f1da       0x58 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f1da                USBDevEndpointStatusClear
+ .text.USBHostEndpointDataToggle
+                0x0000f232       0x4e driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f232                USBHostEndpointDataToggle
+ .text.USBEndpointDataToggleClear
+                0x0000f280       0x1e driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f280                USBEndpointDataToggleClear
+ .text.USBDevEndpointStall
+                0x0000f29e       0x30 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f29e                USBDevEndpointStall
+ .text.USBDevEndpointStallClear
+                0x0000f2ce       0x40 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f2ce                USBDevEndpointStallClear
+ .text.USBDevConnect
+                0x0000f30e        0xa driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f30e                USBDevConnect
+ .text.USBDevDisconnect
+                0x0000f318        0xa driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f318                USBDevDisconnect
+ .text.USBDevAddrSet
+                0x0000f322        0x6 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f322                USBDevAddrSet
+ .text.USBDevAddrGet
+                0x0000f328        0x4 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f328                USBDevAddrGet
+ .text.USBHostEndpointConfig
+                0x0000f32c       0xbe driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f32c                USBHostEndpointConfig
+ .text.USBDevEndpointConfigSet
+                0x0000f3ea       0x7a driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f3ea                USBDevEndpointConfigSet
+ .text.USBDevEndpointConfigGet
+                0x0000f464       0x8a driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f464                USBDevEndpointConfigGet
+ .text.USBFIFOConfigSet
+                0x0000f4ee       0x40 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f4ee                USBFIFOConfigSet
+ .text.USBFIFOConfigGet
+                0x0000f52e       0x44 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f52e                USBFIFOConfigGet
+ .text.USBEndpointDMAEnable
+                0x0000f572       0x1e driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f572                USBEndpointDMAEnable
+ .text.USBEndpointDMADisable
+                0x0000f590       0x1e driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f590                USBEndpointDMADisable
+ .text.USBEndpointDataAvail
+                0x0000f5ae       0x22 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f5ae                USBEndpointDataAvail
+ .text.USBEndpointDataGet
+                0x0000f5d0       0x48 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f5d0                USBEndpointDataGet
+ .text.USBDevEndpointDataAck
+                0x0000f618       0x1e driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f618                USBDevEndpointDataAck
+ .text.USBHostEndpointDataAck
+                0x0000f636       0x1e driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f636                USBHostEndpointDataAck
+ .text.USBEndpointDataPut
+                0x0000f654       0x32 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f654                USBEndpointDataPut
+ .text.USBEndpointDataSend
+                0x0000f686       0x32 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f686                USBEndpointDataSend
+ .text.USBFIFOFlush
+                0x0000f6b8       0x3c driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f6b8                USBFIFOFlush
+ .text.USBHostRequestIN
+                0x0000f6f4       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f6f4                USBHostRequestIN
+ .text.USBHostRequestINClear
+                0x0000f706       0x16 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f706                USBHostRequestINClear
+ .text.USBHostRequestStatus
+                0x0000f71c        0x8 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f71c                USBHostRequestStatus
+ .text.USBHostAddrSet
+                0x0000f724       0x16 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f724                USBHostAddrSet
+ .text.USBHostAddrGet
+                0x0000f73a       0x14 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f73a                USBHostAddrGet
+ .text.USBHostHubAddrSet
+                0x0000f74e       0x2a driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f74e                USBHostHubAddrSet
+ .text.USBHostHubAddrGet
+                0x0000f778       0x14 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f778                USBHostHubAddrGet
+ .text.USBHostPwrConfig
+                0x0000f78c       0x20 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f78c                USBHostPwrConfig
+ .text.USBHostPwrFaultEnable
+                0x0000f7ac       0x10 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f7ac                USBHostPwrFaultEnable
+ .text.USBHostPwrFaultDisable
+                0x0000f7bc       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f7bc                USBHostPwrFaultDisable
+ .text.USBHostPwrEnable
+                0x0000f7ce       0x10 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f7ce                USBHostPwrEnable
+ .text.USBHostPwrDisable
+                0x0000f7de       0x12 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f7de                USBHostPwrDisable
+ .text.USBFrameNumberGet
+                0x0000f7f0        0x6 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f7f0                USBFrameNumberGet
+ .text.USBOTGSessionRequest
+                0x0000f7f6       0x16 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f7f6                USBOTGSessionRequest
+ .text.USBFIFOAddrGet
+                0x0000f80c        0x8 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f80c                USBFIFOAddrGet
+ .text.USBModeGet
+                0x0000f814        0xa driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f814                USBModeGet
+ .text.USBEndpointDMAChannel
+                0x0000f81e       0x20 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f81e                USBEndpointDMAChannel
+ .text.USBHostMode
+                0x0000f83e        0x8 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f83e                USBHostMode
+ .text.USBDevMode
+                0x0000f846        0x8 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f846                USBDevMode
+ .text.USBOTGMode
+                0x0000f84e        0x8 driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f84e                USBOTGMode
+ .text.USBPHYPowerOff
+                0x0000f856        0xa driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f856                USBPHYPowerOff
+ .text.USBPHYPowerOn
+                0x0000f860        0xa driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f860                USBPHYPowerOn
+ *fill*         0x0000f86a        0x2 00
+ .text.USBNumEndpointsGet
+                0x0000f86c       0x6c driverlib/gcc/libdriver-cm3.a(usb.o)
+                0x0000f86c                USBNumEndpointsGet
+ .text          0x0000f8d8        0x0 driverlib/gcc/libdriver-cm3.a(cpu.o)
+ .text.CPUcpsid
+                0x0000f8d8        0x8 driverlib/gcc/libdriver-cm3.a(cpu.o)
+                0x0000f8d8                CPUcpsid
+ .text.CPUprimask
+                0x0000f8e0        0x6 driverlib/gcc/libdriver-cm3.a(cpu.o)
+                0x0000f8e0                CPUprimask
+ .text.CPUcpsie
+                0x0000f8e6        0x8 driverlib/gcc/libdriver-cm3.a(cpu.o)
+                0x0000f8e6                CPUcpsie
+ .text.CPUwfi   0x0000f8ee        0x4 driverlib/gcc/libdriver-cm3.a(cpu.o)
+                0x0000f8ee                CPUwfi
+ .text.CPUbasepriSet
+                0x0000f8f2        0x6 driverlib/gcc/libdriver-cm3.a(cpu.o)
+                0x0000f8f2                CPUbasepriSet
+ .text.CPUbasepriGet
+                0x0000f8f8        0x6 driverlib/gcc/libdriver-cm3.a(cpu.o)
+                0x0000f8f8                CPUbasepriGet
+ .text          0x0000f8fe        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+ *fill*         0x0000f8fe        0x2 00
+ .text.strlen   0x0000f900       0x60 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+                0x0000f900                strlen
+ .text          0x0000f960        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+ .text.strncmp  0x0000f960      0x120 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+                0x0000f960                strncmp
+ .text          0x0000fa80        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+ .text.strncpy  0x0000fa80      0x10c /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+                0x0000fa80                strncpy
+ .text          0x0000fb8c      0x370 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
+                0x0000fb8c                __aeabi_drsub
+                0x0000fb94                __aeabi_dsub
+                0x0000fb94                __subdf3
+                0x0000fb98                __adddf3
+                0x0000fb98                __aeabi_dadd
+                0x0000fe10                __aeabi_ui2d
+                0x0000fe10                __floatunsidf
+                0x0000fe30                __floatsidf
+                0x0000fe30                __aeabi_i2d
+                0x0000fe54                __extendsfdf2
+                0x0000fe54                __aeabi_f2d
+                0x0000fe90                __aeabi_ul2d
+                0x0000fe90                __floatundidf
+                0x0000fea0                __floatdidf
+                0x0000fea0                __aeabi_l2d
+ .text          0x0000fefc      0x424 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_muldivdf3.o)
+                0x0000fefc                __aeabi_dmul
+                0x0000fefc                __muldf3
+                0x00010150                __aeabi_ddiv
+                0x00010150                __divdf3
+ .text          0x00010320       0x40 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
+                0x00010320                __fixunsdfsi
+                0x00010320                __aeabi_d2uiz
+ *(.rodata*)
+ .rodata.g_ulPowerUpWavLen
+                0x00010360        0x4 gcc/main.o
+                0x00010360                g_ulPowerUpWavLen
+ .rodata        0x00010364       0x38 gcc/main.o
+ .rodata.sWaveClips
+                0x0001039c       0x50 gcc/main.o
+ .rodata.g_sUSBEventDriver
+                0x000103ec       0x10 gcc/gamepad.o
+                0x000103ec                g_sUSBEventDriver
+ .rodata.g_ppHostClassDrivers
+                0x000103fc        0x8 gcc/gamepad.o
+ .rodata.g_ulNumHostClassDrivers
+                0x00010404        0x4 gcc/gamepad.o
+ .rodata        0x00010408       0xb8 gcc/gamepad.o
+ .rodata.g_pucFont
+                0x000104c0      0x1dc gcc/display96x16x1.o
+ .rodata.g_pucRITInit
+                0x0001069c       0x30 gcc/display96x16x1.o
+ .rodata.g_pucRITRow1
+                0x000106cc        0x8 gcc/display96x16x1.o
+ .rodata.g_pucRITRow2
+                0x000106d4        0x8 gcc/display96x16x1.o
+ .rodata        0x000106dc       0x28 gcc/DriverControl.o
+ .rodata.sWaveClips
+                0x00010704       0x50 gcc/DriverControl.o
+ .rodata        0x00010754       0x10 gcc/wav.o
+ .rodata        0x00010764       0x28 gcc/sounds.o
+ .rodata.sWaveClips
+                0x0001078c       0x50 gcc/sounds.o
+ .rodata.g_ucSoundWav1
+                0x000107dc     0x1f6c gcc/sounds.o
+                0x000107dc                g_ucSoundWav1
+ .rodata.g_ulSoundWav1Len
+                0x00012748        0x4 gcc/sounds.o
+                0x00012748                g_ulSoundWav1Len
+ .rodata.g_ucSoundWav2
+                0x0001274c     0x5170 gcc/sounds.o
+                0x0001274c                g_ucSoundWav2
+ .rodata.g_ulSoundWav2Len
+                0x000178bc        0x4 gcc/sounds.o
+                0x000178bc                g_ulSoundWav2Len
+ .rodata.g_ucSoundWav3
+                0x000178c0     0x4e80 gcc/sounds.o
+                0x000178c0                g_ucSoundWav3
+ .rodata.g_ulSoundWav3Len
+                0x0001c740        0x4 gcc/sounds.o
+                0x0001c740                g_ulSoundWav3Len
+ .rodata.g_ucSoundWav4
+                0x0001c744     0x4480 gcc/sounds.o
+                0x0001c744                g_ucSoundWav4
+ .rodata.g_ulSoundWav4Len
+                0x00020bc4        0x4 gcc/sounds.o
+                0x00020bc4                g_ulSoundWav4Len
+ .rodata.g_ucSoundWav5
+                0x00020bc8     0x5d80 gcc/sounds.o
+                0x00020bc8                g_ucSoundWav5
+ .rodata.g_ulSoundWav5Len
+                0x00026948        0x4 gcc/sounds.o
+                0x00026948                g_ulSoundWav5Len
+ .rodata.g_ucSoundWav6
+                0x0002694c     0x20cc gcc/sounds.o
+                0x0002694c                g_ucSoundWav6
+ .rodata.g_ulSoundWav6Len
+                0x00028a18        0x4 gcc/sounds.o
+                0x00028a18                g_ulSoundWav6Len
+ .rodata.g_ucSoundWav7
+                0x00028a1c     0x25b4 gcc/sounds.o
+                0x00028a1c                g_ucSoundWav7
+ .rodata.g_ulSoundWav7Len
+                0x0002afd0        0x4 gcc/sounds.o
+                0x0002afd0                g_ulSoundWav7Len
+ .rodata.g_ucSoundWav8
+                0x0002afd4     0x16d4 gcc/sounds.o
+                0x0002afd4                g_ucSoundWav8
+ .rodata.g_ulSoundWav8Len
+                0x0002c6a8        0x4 gcc/sounds.o
+                0x0002c6a8                g_ulSoundWav8Len
+ .rodata.g_ucSoundWav9
+                0x0002c6ac     0x2f4c gcc/sounds.o
+                0x0002c6ac                g_ucSoundWav9
+ .rodata.g_ulSoundWav9Len
+                0x0002f5f8        0x4 gcc/sounds.o
+                0x0002f5f8                g_ulSoundWav9Len
+ .rodata.g_ucSoundWav10
+                0x0002f5fc     0x1a5c gcc/sounds.o
+                0x0002f5fc                g_ucSoundWav10
+ .rodata.g_ulSoundWav10Len
+                0x00031058        0x4 gcc/sounds.o
+                0x00031058                g_ulSoundWav10Len
+ .rodata        0x0003105c       0x1c gcc/ustdlib.o
+ .rodata.g_pcHex
+                0x00031078        0x4 gcc/ustdlib.o
+ .rodata.g_psDaysToMonth
+                0x0003107c       0x18 gcc/ustdlib.o
+ .rodata.g_USBHIDClassDriver
+                0x00031094       0x10 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                0x00031094                g_USBHIDClassDriver
+ .rodata.g_sUSBDefaultFIFOConfig
+                0x000310a4       0x78 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x000310a4                g_sUSBDefaultFIFOConfig
+ .rodata.g_psUSBDStdRequests
+                0x0003111c       0x34 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .rodata.g_USBHubClassDriver
+                0x00031150       0x10 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                0x00031150                g_USBHubClassDriver
+ .rodata.g_pulGPIOBaseAddrs
+                0x00031160       0x78 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .rodata.g_pulEnRegs
+                0x000311d8       0x14 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .rodata.g_pulDisRegs
+                0x000311ec       0x14 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .rodata.g_pulPendRegs
+                0x00031200       0x14 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .rodata.g_pulUnpendRegs
+                0x00031214       0x14 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .rodata.g_pulPriority
+                0x00031228       0x20 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .rodata.g_pulRegs
+                0x00031248       0x9c driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .rodata.g_pulDCRegs
+                0x000312e4       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_pulXtals
+                0x000312f4       0x6c driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_pulDCGCRegs
+                0x00031360        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_ppulPeripheralMap
+                0x0003136c      0x120 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_pulRCGCRegs
+                0x0003148c        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_pulSCGCRegs
+                0x00031498        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_pulSRCRRegs
+                0x000314a4        0xc driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .rodata.g_ppulTimerIntMap
+                0x000314b0       0x60 driverlib/gcc/libdriver-cm3.a(timer.o)
+                0x00031510                _etext = .
+
+.glue_7         0x00031510        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00031510        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00031510        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00031510        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00031510        0x0
+ .iplt          0x00000000        0x0 gcc/main.o
+
+.rel.dyn        0x00031510        0x0
+ .rel.iplt      0x00000000        0x0 gcc/main.o
+
+.data           0x20000000     0xb2b2 load address 0x00031510
+                0x20000000                _data = .
+ *(vtable)
+ vtable         0x20000000      0x400 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ *(.data*)
+ .data          0x20000400        0x0 gcc/main.o
+ .data.g_ucPowerUpWav
+                0x20000400     0xae24 gcc/main.o
+                0x20000400                g_ucPowerUpWav
+ .data.g_psSchedulerTable
+                0x2000b224       0x78 gcc/main.o
+                0x2000b224                g_psSchedulerTable
+ .data.g_ulSchedulerNumTasks
+                0x2000b29c        0x4 gcc/main.o
+                0x2000b29c                g_ulSchedulerNumTasks
+ .data          0x2000b2a0        0x0 gcc/startup_gcc.o
+ .data          0x2000b2a0        0x0 gcc/gamepad.o
+ .data          0x2000b2a0        0x0 gcc/bouncy.o
+ .data.y_dir.3962
+                0x2000b2a0        0x1 gcc/bouncy.o
+ .data          0x2000b2a1        0x0 gcc/display96x16x1.o
+ .data          0x2000b2a1        0x0 gcc/sound.o
+ .data.g_ucVolume
+                0x2000b2a1        0x1 gcc/sound.o
+ .data          0x2000b2a2        0x0 gcc/sensors.o
+ .data.g_ucDebouncedBumpers
+                0x2000b2a2        0x1 gcc/sensors.o
+ .data          0x2000b2a3        0x0 gcc/motor.o
+ .data          0x2000b2a3        0x0 gcc/DriverControl.o
+ .data          0x2000b2a3        0x0 gcc/dac.o
+ .data.g_ucHPVolume
+                0x2000b2a3        0x1 gcc/dac.o
+ .data          0x2000b2a4        0x0 gcc/wav.o
+ .data          0x2000b2a4        0x0 gcc/sounds.o
+ .data          0x2000b2a4        0x0 gcc/scheduler.o
+ .data          0x2000b2a4        0x0 gcc/rangefinder.o
+ .data          0x2000b2a4        0x0 gcc/ustdlib.o
+ .data.g_ulRandomSeed
+                0x2000b2a4        0x4 gcc/ustdlib.o
+ .data          0x2000b2a8        0x0 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .data          0x2000b2a8        0x0 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .data          0x2000b2a8        0x0 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .data.g_ulPowerConfig
+                0x2000b2a8        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .data.g_ulTickms
+                0x2000b2ac        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .data          0x2000b2b0        0x0 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .data.g_eUSBMode
+                0x2000b2b0        0x1 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x2000b2b0                g_eUSBMode
+ .data.g_eDualMode
+                0x2000b2b1        0x1 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .data          0x2000b2b2        0x0 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .data          0x2000b2b2        0x0 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .data          0x2000b2b2        0x0 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .data          0x2000b2b2        0x0 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .data          0x2000b2b2        0x0 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .data          0x2000b2b2        0x0 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(adc.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(i2s.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(systick.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(timer.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(udma.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(usb.o)
+ .data          0x2000b2b2        0x0 driverlib/gcc/libdriver-cm3.a(cpu.o)
+ .data          0x2000b2b2        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+ .data          0x2000b2b2        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+ .data          0x2000b2b2        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+ .data          0x2000b2b2        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
+ .data          0x2000b2b2        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_muldivdf3.o)
+ .data          0x2000b2b2        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
+                0x2000b2b2                _edata = .
+
+.igot.plt       0x2000b2b4        0x0 load address 0x0003c7c4
+ .igot.plt      0x00000000        0x0 gcc/main.o
+
+.bss            0x2000b400     0x2a00 load address 0x0003cc00
+                0x2000b400                _bss = .
+ *(.bss*)
+ .bss           0x2000b400        0x0 gcc/main.o
+ .bss.activeBoostTimer
+                0x2000b400        0x4 gcc/main.o
+ .bss.activeSpinoutTimer
+                0x2000b404        0x4 gcc/main.o
+ .bss.activeAccelerationTimer
+                0x2000b408        0x4 gcc/main.o
+ .bss.StartIsActive
+                0x2000b40c        0x4 gcc/main.o
+ .bss.SpinOutMotorIsActive
+                0x2000b410        0x4 gcc/main.o
+ .bss.BoostMotorIsActive
+                0x2000b414        0x4 gcc/main.o
+ .bss.RegMotorIsActive
+                0x2000b418        0x4 gcc/main.o
+ .bss.motorControlState
+                0x2000b41c        0x4 gcc/main.o
+ .bss.spinOutControlSubState
+                0x2000b420        0x4 gcc/main.o
+ .bss.currentWheelSpeed
+                0x2000b424        0x4 gcc/main.o
+ .bss.currentLeftWheelSpeed
+                0x2000b428        0x4 gcc/main.o
+ .bss.currentRightWheelSpeed
+                0x2000b42c        0x4 gcc/main.o
+ .bss.targetWheelSpeed
+                0x2000b430        0x4 gcc/main.o
+ .bss.targetLeftWheelSpeed
+                0x2000b434        0x4 gcc/main.o
+ .bss.targetRightWheelSpeed
+                0x2000b438        0x4 gcc/main.o
+ .bss.bBumperPressed
+                0x2000b43c        0x1 gcc/main.o
+                0x2000b43c                bBumperPressed
+ .bss.bWavPlaying
+                0x2000b43d        0x1 gcc/main.o
+                0x2000b43d                bWavPlaying
+ .bss           0x2000b43e        0x0 gcc/startup_gcc.o
+ *fill*         0x2000b43e        0x2 00
+ .bss.pulStack  0x2000b440      0x400 gcc/startup_gcc.o
+ .bss           0x2000b840        0x0 gcc/gamepad.o
+ .bss.g_ulGamepadInstance
+                0x2000b840        0x4 gcc/gamepad.o
+ .bss           0x2000b844        0x0 gcc/bouncy.o
+ .bss.y_pos.3961
+                0x2000b844        0x1 gcc/bouncy.o
+ *fill*         0x2000b845        0x3 00
+ .bss.image.3960
+                0x2000b848        0x4 gcc/bouncy.o
+ .bss           0x2000b84c        0x0 gcc/display96x16x1.o
+ .bss           0x2000b84c        0x0 gcc/sound.o
+ .bss.g_ulDMAFlags
+                0x2000b84c        0x4 gcc/sound.o
+ .bss.g_sOutBuffers
+                0x2000b850       0x18 gcc/sound.o
+ .bss.g_ulPlaying
+                0x2000b868        0x4 gcc/sound.o
+ .bss.g_ulSampleRate
+                0x2000b86c        0x4 gcc/sound.o
+ .bss.g_usChannels
+                0x2000b870        0x2 gcc/sound.o
+ *fill*         0x2000b872        0x2 00
+ .bss.g_usBitsPerSample
+                0x2000b874        0x4 gcc/sound.o
+ .bss           0x2000b878        0x0 gcc/sensors.o
+ .bss.g_pfnWheelCallback
+                0x2000b878        0x4 gcc/sensors.o
+ .bss.ucBumperClockA.4351
+                0x2000b87c        0x1 gcc/sensors.o
+ .bss.ucBumperClockB.4352
+                0x2000b87d        0x1 gcc/sensors.o
+ .bss           0x2000b87e        0x0 gcc/motor.o
+ .bss           0x2000b87e        0x0 gcc/DriverControl.o
+ *fill*         0x2000b87e        0x2 00
+ .bss.activeBoostTimer
+                0x2000b880        0x4 gcc/DriverControl.o
+ .bss.activeSpinoutTimer
+                0x2000b884        0x4 gcc/DriverControl.o
+ .bss.activeAccelerationTimer
+                0x2000b888        0x4 gcc/DriverControl.o
+ .bss.StartIsActive
+                0x2000b88c        0x4 gcc/DriverControl.o
+ .bss.SpinOutMotorIsActive
+                0x2000b890        0x4 gcc/DriverControl.o
+ .bss.BoostMotorIsActive
+                0x2000b894        0x4 gcc/DriverControl.o
+ .bss.RegMotorIsActive
+                0x2000b898        0x4 gcc/DriverControl.o
+ .bss.motorControlState
+                0x2000b89c        0x4 gcc/DriverControl.o
+ .bss.spinOutControlSubState
+                0x2000b8a0        0x4 gcc/DriverControl.o
+ .bss.currentWheelSpeed
+                0x2000b8a4        0x4 gcc/DriverControl.o
+ .bss.currentLeftWheelSpeed
+                0x2000b8a8        0x4 gcc/DriverControl.o
+ .bss.currentRightWheelSpeed
+                0x2000b8ac        0x4 gcc/DriverControl.o
+ .bss.targetWheelSpeed
+                0x2000b8b0        0x4 gcc/DriverControl.o
+ .bss.targetLeftWheelSpeed
+                0x2000b8b4        0x4 gcc/DriverControl.o
+ .bss.targetRightWheelSpeed
+                0x2000b8b8        0x4 gcc/DriverControl.o
+ .bss           0x2000b8bc        0x0 gcc/dac.o
+ .bss           0x2000b8bc        0x0 gcc/wav.o
+ .bss.g_pucBuffer
+                0x2000b8bc     0x1000 gcc/wav.o
+ .bss.g_pucDataPtr
+                0x2000c8bc        0x4 gcc/wav.o
+ .bss.g_ulMaxBufferSize
+                0x2000c8c0        0x4 gcc/wav.o
+ .bss.g_ulFlags
+                0x2000c8c4        0x4 gcc/wav.o
+ .bss.g_ulBytesPlayed
+                0x2000c8c8        0x4 gcc/wav.o
+ .bss.g_ulBytesRemaining
+                0x2000c8cc        0x4 gcc/wav.o
+ .bss.g_usMinutes
+                0x2000c8d0        0x2 gcc/wav.o
+ .bss.g_usSeconds
+                0x2000c8d2        0x2 gcc/wav.o
+ .bss           0x2000c8d4        0x0 gcc/sounds.o
+ .bss           0x2000c8d4        0x0 gcc/scheduler.o
+ .bss.g_ulSchedulerTickCount
+                0x2000c8d4        0x4 gcc/scheduler.o
+ .bss           0x2000c8d8        0x0 gcc/rangefinder.o
+ .bss           0x2000c8d8        0x0 gcc/ustdlib.o
+ .bss           0x2000c8d8        0x0 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .bss.g_pHIDDevice
+                0x2000c8d8       0x64 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .bss           0x2000c93c        0x0 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .bss.g_sUSBHGamepad
+                0x2000c93c       0x20 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .bss           0x2000c95c        0x0 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_ulDMAPending
+                0x2000c95c        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x2000c95c                g_ulDMAPending
+ .bss.g_bUseDMAWA
+                0x2000c960        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_sUSBHEP0State
+                0x2000c964       0x18 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_ulCurrentTick
+                0x2000c97c        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_lUSBHActiveDriver
+                0x2000c980       0x18 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_pvDriverInstance
+                0x2000c998       0x18 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_sUSBHCD
+                0x2000c9b0      0x5fc usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.g_ulAlloc
+                0x2000cfac        0x8 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss.ulSOFDivide.5212
+                0x2000cfb4        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .bss           0x2000cfb8        0x0 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .bss.g_ulWaitTicks
+                0x2000cfb8        0x4 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x2000cfb8                g_ulWaitTicks
+ .bss.g_pfnUSBModeCallback
+                0x2000cfbc        0x4 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .bss           0x2000cfc0        0x0 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .bss.g_bUSBTimerInitialized
+                0x2000cfc0        0x1 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x2000cfc0                g_bUSBTimerInitialized
+ *fill*         0x2000cfc1        0x3 00
+ .bss.g_ulCurrentUSBTick
+                0x2000cfc4        0x4 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x2000cfc4                g_ulCurrentUSBTick
+ .bss.g_ulUSBSOFCount
+                0x2000cfc8        0x4 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x2000cfc8                g_ulUSBSOFCount
+ .bss           0x2000cfcc        0x0 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .bss.g_pucDataBufferIn
+                0x2000cfcc       0x40 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .bss.ulSOFDivide.4915
+                0x2000d00c        0x4 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .bss           0x2000d010        0x0 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .bss           0x2000d010        0x0 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .bss.g_pRootHub
+                0x2000d010        0x4 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .bss.g_ulChangeFlags
+                0x2000d014        0x4 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .bss.g_ulHubChanges
+                0x2000d018        0x4 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .bss           0x2000d01c        0x0 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .bss           0x2000d01c        0x0 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .bss           0x2000d01c        0x0 driverlib/gcc/libdriver-cm3.a(adc.o)
+ .bss.g_pucOversampleFactor
+                0x2000d01c        0x3 driverlib/gcc/libdriver-cm3.a(adc.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(i2s.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(systick.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(timer.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(udma.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(usb.o)
+ .bss           0x2000d01f        0x0 driverlib/gcc/libdriver-cm3.a(cpu.o)
+ .bss           0x2000d01f        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+ .bss           0x2000d01f        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+ .bss           0x2000d01f        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+ .bss           0x2000d01f        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x2000d01f        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x2000d01f        0x0 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
+ *(COMMON)
+ *fill*         0x2000d01f      0x3e1 00
+ COMMON         0x2000d400      0x800 gcc/main.o
+                0x2000d400                GamepadState
+                0x2000d401                GamepadUpdatedFlag
+                0x2000d404                currentMeasuredDistance
+                0x2000d408                GamepadButtons
+                0x2000d40c                xWaveHeader
+                0x2000d800                sDMAControlTable
+ COMMON         0x2000dc00      0x160 gcc/gamepad.o
+                0x2000dc00                g_pucBuffer
+                0x2000dc80                g_pHCDPool
+                0x2000dd00                g_sDMAControlTable
+ COMMON         0x2000dd60        0x4 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                0x2000dd60                g_ulUSBHIntEvents
+ COMMON         0x2000dd64        0x5 usblib/gcc/libusb-cm3.a(usbmode.o)
+                0x2000dd64                g_ulPollRate
+                0x2000dd68                g_eOTGModeState
+ *fill*         0x2000dd69        0x3 00
+ COMMON         0x2000dd6c       0x30 usblib/gcc/libusb-cm3.a(usbtick.o)
+                0x2000dd6c                g_pfTickHandlers
+                0x2000dd84                g_pvTickInstance
+ COMMON         0x2000dd9c       0x54 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                0x2000dd9c                g_psUSBDevice
+ COMMON         0x2000ddf0       0x10 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+                0x2000ddf0                bNewPLL
+                0x2000ddf4                ulSysDiv
+                0x2000ddf8                ulOsc
+                0x2000ddfc                ulOscSelect
+                0x2000de00                _ebss = .
+LOAD gcc/main.o
+LOAD gcc/startup_gcc.o
+LOAD gcc/gamepad.o
+LOAD gcc/bouncy.o
+LOAD gcc/display96x16x1.o
+LOAD gcc/sound.o
+LOAD gcc/sensors.o
+LOAD gcc/motor.o
+LOAD gcc/DriverControl.o
+LOAD gcc/dac.o
+LOAD gcc/wav.o
+LOAD gcc/sounds.o
+LOAD gcc/scheduler.o
+LOAD gcc/rangefinder.o
+LOAD gcc/ustdlib.o
+LOAD usblib/gcc/libusb-cm3.a
+LOAD driverlib/gcc/libdriver-cm3.a
+LOAD /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a
+LOAD /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libm.a
+LOAD /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a
+OUTPUT(gcc/mariokart.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x8f7b
+ .debug_info    0x00000000      0x680 gcc/main.o
+ .debug_info    0x00000680      0x12b gcc/startup_gcc.o
+ .debug_info    0x000007ab      0x758 gcc/gamepad.o
+ .debug_info    0x00000f03       0xaa gcc/bouncy.o
+ .debug_info    0x00000fad      0x420 gcc/display96x16x1.o
+ .debug_info    0x000013cd      0x396 gcc/sound.o
+ .debug_info    0x00001763      0x292 gcc/sensors.o
+ .debug_info    0x000019f5      0x192 gcc/motor.o
+ .debug_info    0x00001b87      0x4d8 gcc/DriverControl.o
+ .debug_info    0x0000205f      0x17d gcc/dac.o
+ .debug_info    0x000021dc      0x408 gcc/wav.o
+ .debug_info    0x000025e4      0x302 gcc/sounds.o
+ .debug_info    0x000028e6      0x24f gcc/scheduler.o
+ .debug_info    0x00002b35       0xff gcc/rangefinder.o
+ .debug_info    0x00002c34      0x565 gcc/ustdlib.o
+ .debug_info    0x00003199      0x8f9 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_info    0x00003a92      0x29f usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_info    0x00003d31     0x1a3b usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_info    0x0000576c      0x42a usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_info    0x00005b96      0x1b5 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_info    0x00005d4b     0x123f usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_info    0x00006f8a      0x499 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_info    0x00007423      0xc1f usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_info    0x00008042      0x588 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_info    0x000085ca      0x9b1 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+
+.debug_abbrev   0x00000000     0x1f00
+ .debug_abbrev  0x00000000      0x19e gcc/main.o
+ .debug_abbrev  0x0000019e       0xab gcc/startup_gcc.o
+ .debug_abbrev  0x00000249      0x1a3 gcc/gamepad.o
+ .debug_abbrev  0x000003ec       0x70 gcc/bouncy.o
+ .debug_abbrev  0x0000045c       0xe1 gcc/display96x16x1.o
+ .debug_abbrev  0x0000053d      0x14e gcc/sound.o
+ .debug_abbrev  0x0000068b      0x141 gcc/sensors.o
+ .debug_abbrev  0x000007cc       0xcc gcc/motor.o
+ .debug_abbrev  0x00000898      0x129 gcc/DriverControl.o
+ .debug_abbrev  0x000009c1       0xe6 gcc/dac.o
+ .debug_abbrev  0x00000aa7      0x195 gcc/wav.o
+ .debug_abbrev  0x00000c3c       0xa0 gcc/sounds.o
+ .debug_abbrev  0x00000cdc      0x15b gcc/scheduler.o
+ .debug_abbrev  0x00000e37       0xb1 gcc/rangefinder.o
+ .debug_abbrev  0x00000ee8      0x18c gcc/ustdlib.o
+ .debug_abbrev  0x00001074      0x1b6 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_abbrev  0x0000122a      0x12b usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_abbrev  0x00001355      0x20d usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_abbrev  0x00001562      0x15b usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_abbrev  0x000016bd       0xf7 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_abbrev  0x000017b4      0x1d9 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_abbrev  0x0000198d       0xe1 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_abbrev  0x00001a6e      0x205 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_abbrev  0x00001c73      0x102 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_abbrev  0x00001d75      0x18b usblib/gcc/libusb-cm3.a(usbdconfig.o)
+
+.debug_loc      0x00000000     0x348c
+ .debug_loc     0x00000000      0x13a gcc/main.o
+ .debug_loc     0x0000013a       0xbc gcc/startup_gcc.o
+ .debug_loc     0x000001f6       0xd4 gcc/gamepad.o
+ .debug_loc     0x000002ca       0x64 gcc/bouncy.o
+ .debug_loc     0x0000032e      0x2c0 gcc/display96x16x1.o
+ .debug_loc     0x000005ee      0x22c gcc/sound.o
+ .debug_loc     0x0000081a      0x20c gcc/sensors.o
+ .debug_loc     0x00000a26      0x10c gcc/motor.o
+ .debug_loc     0x00000b32      0x1f0 gcc/DriverControl.o
+ .debug_loc     0x00000d22      0x164 gcc/dac.o
+ .debug_loc     0x00000e86      0x1e0 gcc/wav.o
+ .debug_loc     0x00001066      0x1a8 gcc/scheduler.o
+ .debug_loc     0x0000120e       0x9c gcc/rangefinder.o
+ .debug_loc     0x000012aa      0x23c gcc/ustdlib.o
+ .debug_loc     0x000014e6      0x230 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_loc     0x00001716      0x118 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_loc     0x0000182e      0xb62 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_loc     0x00002390      0x2a0 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_loc     0x00002630       0xd4 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_loc     0x00002704      0x5e8 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_loc     0x00002cec      0x150 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_loc     0x00002e3c      0x3ac usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_loc     0x000031e8      0x1c0 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_loc     0x000033a8       0xe4 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+
+.debug_aranges  0x00000000      0xa18
+ .debug_aranges
+                0x00000000       0x48 gcc/main.o
+ .debug_aranges
+                0x00000048       0x38 gcc/startup_gcc.o
+ .debug_aranges
+                0x00000080       0x38 gcc/gamepad.o
+ .debug_aranges
+                0x000000b8       0x28 gcc/bouncy.o
+ .debug_aranges
+                0x000000e0       0x80 gcc/display96x16x1.o
+ .debug_aranges
+                0x00000160       0x70 gcc/sound.o
+ .debug_aranges
+                0x000001d0       0x68 gcc/sensors.o
+ .debug_aranges
+                0x00000238       0x40 gcc/motor.o
+ .debug_aranges
+                0x00000278       0x70 gcc/DriverControl.o
+ .debug_aranges
+                0x000002e8       0x50 gcc/dac.o
+ .debug_aranges
+                0x00000338       0x60 gcc/wav.o
+ .debug_aranges
+                0x00000398       0x18 gcc/sounds.o
+ .debug_aranges
+                0x000003b0       0x58 gcc/scheduler.o
+ .debug_aranges
+                0x00000408       0x30 gcc/rangefinder.o
+ .debug_aranges
+                0x00000438       0x68 gcc/ustdlib.o
+ .debug_aranges
+                0x000004a0       0x68 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_aranges
+                0x00000508       0x40 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_aranges
+                0x00000548      0x1b8 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_aranges
+                0x00000700       0x78 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_aranges
+                0x00000778       0x38 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_aranges
+                0x000007b0       0xf0 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_aranges
+                0x000008a0       0x48 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_aranges
+                0x000008e8       0xa0 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_aranges
+                0x00000988       0x58 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_aranges
+                0x000009e0       0x38 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+
+.debug_ranges   0x00000000      0x880
+ .debug_ranges  0x00000000       0x38 gcc/main.o
+ .debug_ranges  0x00000038       0x28 gcc/startup_gcc.o
+ .debug_ranges  0x00000060       0x28 gcc/gamepad.o
+ .debug_ranges  0x00000088       0x18 gcc/bouncy.o
+ .debug_ranges  0x000000a0       0x70 gcc/display96x16x1.o
+ .debug_ranges  0x00000110       0x60 gcc/sound.o
+ .debug_ranges  0x00000170       0x58 gcc/sensors.o
+ .debug_ranges  0x000001c8       0x30 gcc/motor.o
+ .debug_ranges  0x000001f8       0x60 gcc/DriverControl.o
+ .debug_ranges  0x00000258       0x40 gcc/dac.o
+ .debug_ranges  0x00000298       0x50 gcc/wav.o
+ .debug_ranges  0x000002e8       0x48 gcc/scheduler.o
+ .debug_ranges  0x00000330       0x20 gcc/rangefinder.o
+ .debug_ranges  0x00000350       0x58 gcc/ustdlib.o
+ .debug_ranges  0x000003a8       0x58 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_ranges  0x00000400       0x30 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_ranges  0x00000430      0x1a8 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_ranges  0x000005d8       0x68 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_ranges  0x00000640       0x28 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_ranges  0x00000668       0xe0 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_ranges  0x00000748       0x38 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_ranges  0x00000780       0x90 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_ranges  0x00000810       0x48 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_ranges  0x00000858       0x28 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+
+.debug_line     0x00000000     0x32b3
+ .debug_line    0x00000000      0x156 gcc/main.o
+ .debug_line    0x00000156       0x8a gcc/startup_gcc.o
+ .debug_line    0x000001e0      0x1dd gcc/gamepad.o
+ .debug_line    0x000003bd       0x5c gcc/bouncy.o
+ .debug_line    0x00000419      0x28e gcc/display96x16x1.o
+ .debug_line    0x000006a7      0x1d8 gcc/sound.o
+ .debug_line    0x0000087f      0x177 gcc/sensors.o
+ .debug_line    0x000009f6      0x106 gcc/motor.o
+ .debug_line    0x00000afc      0x1b5 gcc/DriverControl.o
+ .debug_line    0x00000cb1      0x170 gcc/dac.o
+ .debug_line    0x00000e21      0x185 gcc/wav.o
+ .debug_line    0x00000fa6       0x35 gcc/sounds.o
+ .debug_line    0x00000fdb      0x129 gcc/scheduler.o
+ .debug_line    0x00001104       0x7c gcc/rangefinder.o
+ .debug_line    0x00001180      0x363 gcc/ustdlib.o
+ .debug_line    0x000014e3      0x1d5 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_line    0x000016b8      0x11a usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_line    0x000017d2      0xaae usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_line    0x00002280      0x1f1 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_line    0x00002471       0xd6 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_line    0x00002547      0x541 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_line    0x00002a88      0x125 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_line    0x00002bad      0x376 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_line    0x00002f23      0x173 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_line    0x00003096      0x21d usblib/gcc/libusb-cm3.a(usbdconfig.o)
+
+.debug_str      0x00000000     0x340e
+ .debug_str     0x00000000      0x552 gcc/main.o
+                                0x5d3 (size before relaxing)
+ .debug_str     0x00000552       0x71 gcc/startup_gcc.o
+                                0x114 (size before relaxing)
+ .debug_str     0x000005c3      0x355 gcc/gamepad.o
+                                0x5c1 (size before relaxing)
+ .debug_str     0x00000918       0x35 gcc/bouncy.o
+                                 0xd4 (size before relaxing)
+ .debug_str     0x0000094d      0x1dc gcc/display96x16x1.o
+                                0x309 (size before relaxing)
+ .debug_str     0x00000b29      0x194 gcc/sound.o
+                                0x2d5 (size before relaxing)
+ .debug_str     0x00000cbd      0x180 gcc/sensors.o
+                                0x24d (size before relaxing)
+ .debug_str     0x00000e3d       0xb3 gcc/motor.o
+                                0x16e (size before relaxing)
+ .debug_str     0x00000ef0       0xdd gcc/DriverControl.o
+                                0x4cf (size before relaxing)
+ .debug_str     0x00000fcd       0xa5 gcc/dac.o
+                                0x15d (size before relaxing)
+ .debug_str     0x00001072      0x1a8 gcc/wav.o
+                                0x31e (size before relaxing)
+ .debug_str     0x0000121a       0xb4 gcc/sounds.o
+                                0x21a (size before relaxing)
+ .debug_str     0x000012ce      0x11d gcc/scheduler.o
+                                0x245 (size before relaxing)
+ .debug_str     0x000013eb       0x51 gcc/rangefinder.o
+                                0x183 (size before relaxing)
+ .debug_str     0x0000143c      0x1a7 gcc/ustdlib.o
+                                0x2fa (size before relaxing)
+ .debug_str     0x000015e3      0x317 usblib/gcc/libusb-cm3.a(usbhhid.o)
+                                0x611 (size before relaxing)
+ .debug_str     0x000018fa       0xca usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+                                0x235 (size before relaxing)
+ .debug_str     0x000019c4      0xa0a usblib/gcc/libusb-cm3.a(usbhostenum.o)
+                                0xe71 (size before relaxing)
+ .debug_str     0x000023ce      0x1d5 usblib/gcc/libusb-cm3.a(usbmode.o)
+                                0x363 (size before relaxing)
+ .debug_str     0x000025a3       0xde usblib/gcc/libusb-cm3.a(usbtick.o)
+                                0x1c6 (size before relaxing)
+ .debug_str     0x00002681      0x6f0 usblib/gcc/libusb-cm3.a(usbdenum.o)
+                                0xae7 (size before relaxing)
+ .debug_str     0x00002d71       0xd3 usblib/gcc/libusb-cm3.a(usbdesc.o)
+                                0x301 (size before relaxing)
+ .debug_str     0x00002e44      0x382 usblib/gcc/libusb-cm3.a(usbhhub.o)
+                                0x80e (size before relaxing)
+ .debug_str     0x000031c6      0x136 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+                                0x39a (size before relaxing)
+ .debug_str     0x000032fc      0x112 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+                                0x70f (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 gcc/main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 gcc/startup_gcc.o
+ .comment       0x00000000       0x71 gcc/gamepad.o
+ .comment       0x00000000       0x71 gcc/bouncy.o
+ .comment       0x00000000       0x71 gcc/display96x16x1.o
+ .comment       0x00000000       0x71 gcc/sound.o
+ .comment       0x00000000       0x71 gcc/sensors.o
+ .comment       0x00000000       0x71 gcc/motor.o
+ .comment       0x00000000       0x71 gcc/DriverControl.o
+ .comment       0x00000000       0x71 gcc/dac.o
+ .comment       0x00000000       0x71 gcc/wav.o
+ .comment       0x00000000       0x71 gcc/sounds.o
+ .comment       0x00000000       0x71 gcc/scheduler.o
+ .comment       0x00000000       0x71 gcc/rangefinder.o
+ .comment       0x00000000       0x71 gcc/ustdlib.o
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .comment       0x00000000       0x71 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(adc.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(i2s.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(systick.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(timer.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(udma.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(usb.o)
+ .comment       0x00000000       0x71 driverlib/gcc/libdriver-cm3.a(cpu.o)
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 gcc/main.o
+ .ARM.attributes
+                0x00000033       0x33 gcc/startup_gcc.o
+ .ARM.attributes
+                0x00000066       0x33 gcc/gamepad.o
+ .ARM.attributes
+                0x00000099       0x33 gcc/bouncy.o
+ .ARM.attributes
+                0x000000cc       0x33 gcc/display96x16x1.o
+ .ARM.attributes
+                0x000000ff       0x33 gcc/sound.o
+ .ARM.attributes
+                0x00000132       0x33 gcc/sensors.o
+ .ARM.attributes
+                0x00000165       0x33 gcc/motor.o
+ .ARM.attributes
+                0x00000198       0x33 gcc/DriverControl.o
+ .ARM.attributes
+                0x000001cb       0x33 gcc/dac.o
+ .ARM.attributes
+                0x000001fe       0x33 gcc/wav.o
+ .ARM.attributes
+                0x00000231       0x33 gcc/sounds.o
+ .ARM.attributes
+                0x00000264       0x33 gcc/scheduler.o
+ .ARM.attributes
+                0x00000297       0x33 gcc/rangefinder.o
+ .ARM.attributes
+                0x000002ca       0x33 gcc/ustdlib.o
+ .ARM.attributes
+                0x000002fd       0x33 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .ARM.attributes
+                0x00000330       0x33 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .ARM.attributes
+                0x00000363       0x33 usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .ARM.attributes
+                0x00000396       0x33 usblib/gcc/libusb-cm3.a(usbmode.o)
+ .ARM.attributes
+                0x000003c9       0x33 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .ARM.attributes
+                0x000003fc       0x33 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .ARM.attributes
+                0x0000042f       0x33 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .ARM.attributes
+                0x00000462       0x33 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .ARM.attributes
+                0x00000495       0x33 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .ARM.attributes
+                0x000004c8       0x33 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .ARM.attributes
+                0x000004fb       0x33 driverlib/gcc/libdriver-cm3.a(adc.o)
+ .ARM.attributes
+                0x0000052e       0x33 driverlib/gcc/libdriver-cm3.a(gpio.o)
+ .ARM.attributes
+                0x00000561       0x33 driverlib/gcc/libdriver-cm3.a(i2s.o)
+ .ARM.attributes
+                0x00000594       0x33 driverlib/gcc/libdriver-cm3.a(interrupt.o)
+ .ARM.attributes
+                0x000005c7       0x33 driverlib/gcc/libdriver-cm3.a(sysctl.o)
+ .ARM.attributes
+                0x000005fa       0x33 driverlib/gcc/libdriver-cm3.a(systick.o)
+ .ARM.attributes
+                0x0000062d       0x33 driverlib/gcc/libdriver-cm3.a(timer.o)
+ .ARM.attributes
+                0x00000660       0x33 driverlib/gcc/libdriver-cm3.a(udma.o)
+ .ARM.attributes
+                0x00000693       0x33 driverlib/gcc/libdriver-cm3.a(usb.o)
+ .ARM.attributes
+                0x000006c6       0x33 driverlib/gcc/libdriver-cm3.a(cpu.o)
+ .ARM.attributes
+                0x000006f9       0x2d /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000726       0x2d /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+ .ARM.attributes
+                0x00000753       0x2d /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x00000780       0x1d /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000079d       0x1d /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x000007ba       0x1d /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/armv7-m/libgcc.a(_arm_fixunsdfsi.o)
+
+.debug_frame    0x00000000     0x1f90
+ .debug_frame   0x00000000       0xc4 gcc/main.o
+ .debug_frame   0x000000c4       0x78 gcc/startup_gcc.o
+ .debug_frame   0x0000013c       0x8c gcc/gamepad.o
+ .debug_frame   0x000001c8       0x4c gcc/bouncy.o
+ .debug_frame   0x00000214      0x1a8 gcc/display96x16x1.o
+ .debug_frame   0x000003bc      0x158 gcc/sound.o
+ .debug_frame   0x00000514      0x144 gcc/sensors.o
+ .debug_frame   0x00000658       0xb0 gcc/motor.o
+ .debug_frame   0x00000708      0x13c gcc/DriverControl.o
+ .debug_frame   0x00000844       0xe0 gcc/dac.o
+ .debug_frame   0x00000924      0x118 gcc/wav.o
+ .debug_frame   0x00000a3c       0xf4 gcc/scheduler.o
+ .debug_frame   0x00000b30       0x6c gcc/rangefinder.o
+ .debug_frame   0x00000b9c      0x144 gcc/ustdlib.o
+ .debug_frame   0x00000ce0      0x148 usblib/gcc/libusb-cm3.a(usbhhid.o)
+ .debug_frame   0x00000e28       0xb0 usblib/gcc/libusb-cm3.a(usbhhidgamepad.o)
+ .debug_frame   0x00000ed8      0x66c usblib/gcc/libusb-cm3.a(usbhostenum.o)
+ .debug_frame   0x00001544      0x18c usblib/gcc/libusb-cm3.a(usbmode.o)
+ .debug_frame   0x000016d0       0x80 usblib/gcc/libusb-cm3.a(usbtick.o)
+ .debug_frame   0x00001750      0x360 usblib/gcc/libusb-cm3.a(usbdenum.o)
+ .debug_frame   0x00001ab0       0xc0 usblib/gcc/libusb-cm3.a(usbdesc.o)
+ .debug_frame   0x00001b70      0x218 usblib/gcc/libusb-cm3.a(usbhhub.o)
+ .debug_frame   0x00001d88      0x108 usblib/gcc/libusb-cm3.a(usbdcdesc.o)
+ .debug_frame   0x00001e90       0x88 usblib/gcc/libusb-cm3.a(usbdconfig.o)
+ .debug_frame   0x00001f18       0x20 /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+ .debug_frame   0x00001f38       0x2c /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
+ .debug_frame   0x00001f64       0x2c /opt/gcc-arm-none-eabi-4_7-2013q3/bin/../lib/gcc/arm-none-eabi/4.7.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)

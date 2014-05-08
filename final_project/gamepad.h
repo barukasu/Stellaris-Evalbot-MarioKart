@@ -8,6 +8,7 @@
 #ifndef GAMEPAD_H_
 #define GAMEPAD_H_
 
+#include "inc/hw_types.h"
 
 /* Struct that contains the Gamepad controls we're interested in */
 typedef struct

@@ -80,6 +80,8 @@ ${COMPILER}/mariokart.axf: ${COMPILER}/bouncy.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/display96x16x1.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/sound.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/sensors.o
+${COMPILER}/mariokart.axf: ${COMPILER}/motor.o
+${COMPILER}/mariokart.axf: ${COMPILER}/DriverControl.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/dac.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/wav.o
 ${COMPILER}/mariokart.axf: ${COMPILER}/sounds.o
