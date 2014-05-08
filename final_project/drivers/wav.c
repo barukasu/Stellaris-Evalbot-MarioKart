@@ -612,6 +612,14 @@ WaveGetTime(tWaveHeader *pWaveHeader, char *pcTime, unsigned long ulSize)
               ulSeconds, g_usMinutes, g_usSeconds);
 }
 
+
+unsigned long
+WaveGetBytesPlayed(void)
+{
+	return g_ulBytesPlayed;
+
+}
+
 //*****************************************************************************
 //
 //! Returns the current playback status of the wave file.

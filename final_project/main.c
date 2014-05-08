@@ -36,7 +36,7 @@
 static void vInit(void);
 static void vCheckBumperFlag(void *pvParam);
 static void vContinueSound(void *pvParam);
-static void soundStart(unsigned long ulWaveIndex);
+static int soundStart(unsigned long ulWaveIndex);
 
 
 unsigned long currentMeasuredDistance;
@@ -50,7 +50,7 @@ unsigned long currentMeasuredDistance;
  */
 tSchedulerTask g_psSchedulerTable[] =
 {
-        { vContinueSound, 0, 5, 0, false },
+        { vContinueSound, 0, 1, 0, false },// changed from 5 ticks to 1 so music can stop
         { vCheckBumperFlag, 0, 3, 0, true },
         { vBouncyUpdate, 0, 2, 0, true },
         { vGamepadUpdate, 0, 1, 0, true },
@@ -66,6 +66,9 @@ tDMAControlTable sDMAControlTable[64] __attribute__ ((aligned(1024)));
 
 /* Global WAV header */
 tWaveHeader xWaveHeader;
+
+/* Global Index for current sound playing */
+volatile unsigned long currentSongByteLength = 0;
 
 /* Global Flag for Bumper Pressed */
 volatile tBoolean bBumperPressed = false;
@@ -87,31 +90,27 @@ int main(void)
     char statusStr[96];
 
     int sounddemo=0; // sound demo
-    SoundVolumeSet(25); // less obnoxious during testing
+    SoundVolumeSet(80); // less obnoxious during testing
+
 
     while (1)
     {
         SchedulerRun();
 
-        /// Displays sound and distance status
-		if (GamepadState == STATE_GAMEPLAY)
-		{
-		    usprintf(statusStr,"snd=%02d d=%04d",
-		            sounddemo,
-		            currentMeasuredDistance);
-		    Display96x16x1StringDrawCentered( statusStr,0,false);
-		}
+        // to get measurements
+        // currentMeasuredDistance
 
-        // For getting the range measurements use currentMeasuredDistance
-		//usprintf(statusStr,"AIN0=%4d\r",currentMeasuredDistance);
-		//Display96x16x1StringDraw( statusStr,0,true);
-        //if(currentMeasuredDistance>200 && bWavPlaying==false)
-        //	soundStart(0);
+        // to play sound
+        // soundStart(sounddemo) where soundemo is 0-9
+
+        // A DEMO OF SOUNDS
+       ///////////////////////////////////////////////////
         if(GamepadButtons.buttonA && bWavPlaying==false)
         {
-        	soundStart(sounddemo);
+        	usprintf(statusStr,"sound=%d\r",sounddemo);
+        	Display96x16x1StringDrawCentered(statusStr,0,false);
+        	sounddemo = soundStart(sounddemo); // returns the actual sound index used
         	sounddemo++;
-        	if (sounddemo >= NUM_WAVES) sounddemo = 0;
         }
     }
 
@@ -186,15 +185,26 @@ static void vCheckBumperFlag(void *pvParam)
     }
 }
 
+
 /* Required to keep the wave sound playing.  Does not complain
  * if called too often or after the WAV is complete. */
 static void vContinueSound(void *pvParam)
 {
-    if (WavePlayContinue(&xWaveHeader))
-    {
+	/* used for diagnostics
+	char statusStr[96];
+    usprintf(statusStr,"%d,%d",
+    		WaveGetBytesPlayed() ,
+    		currentSongByteLength);
+    Display96x16x1StringDrawCentered( statusStr,1,false);
+	*/
+	if(WavePlayContinue(&xWaveHeader)  ||(WaveGetBytesPlayed() > currentSongByteLength) )
+	//if(WavePlayContinue(&xWaveHeader) )
+	{
         /* If WavePlayContinue() returns true, then playback is
          * complete...disable this task and clear flag
          */
+		//Display96x16x1StringDrawCentered("stop sound",0,false);
+		WaveStop();
         SchedulerTaskDisable(0);
         bWavPlaying = false;
     }
@@ -217,8 +227,11 @@ void ISR_Bumper(void)
 }
 
 
-void soundStart(unsigned long ulWaveIndex)
+int soundStart(unsigned long ulWaveIndex)
 {
+	if(9<ulWaveIndex)
+		ulWaveIndex=0; // safety check
+
 	//g_ucPowerUpWav g_ucSoundWav9
     //if(WaveOpen((unsigned long *) sWaveClips[ulWaveIndex].pucWav,&xWaveHeader) == WAVE_OK)
     if(WaveOpen((unsigned long *) sWaveClips[ulWaveIndex].pucWav, &xWaveHeader)==0)
@@ -226,8 +239,36 @@ void soundStart(unsigned long ulWaveIndex)
     {
         WavePlayStart(&xWaveHeader);
         bWavPlaying = true;
-
+        currentSongByteLength = getSoundSize(ulWaveIndex);
         // Re-enable vContinueSound()
         SchedulerTaskEnable(0, false);
     }
+
+    return ulWaveIndex;
 }
+
+
+/*
+ *         /// Displays sound and distance status
+		if (GamepadState == STATE_GAMEPLAY && 0)
+		{
+		    usprintf(statusStr,"snd=%02d d=%04d",
+		            sounddemo,
+		            currentMeasuredDistance);
+		    Display96x16x1StringDrawCentered( statusStr,0,false);
+		}
+
+        // For getting the range measurements use currentMeasuredDistance
+		//usprintf(statusStr,"AIN0=%4d\r",currentMeasuredDistance);
+		//Display96x16x1StringDraw( statusStr,0,true);
+        //if(currentMeasuredDistance>200 && bWavPlaying==false)
+        //	soundStart(0);
+        if(GamepadButtons.buttonA && bWavPlaying==false)
+        {
+        	Display96x16x1StringDrawCentered("Play sound",0,false);
+        	sounddemo = soundStart(sounddemo); // returns the actual sound index used
+        	sounddemo++;
+
+        }
+ *
+ */
