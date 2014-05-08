@@ -131,7 +131,7 @@ extern void WaveStop(void);
 extern void WaveGetTime(tWaveHeader *pWaveHeader, char *pcTime,
                         unsigned long ulSize);
 extern tBoolean WavePlaybackStatus(void);
-
+extern unsigned long WaveGetBytesPlayed(void);
 //*****************************************************************************
 //
 // Mark the end of the C bindings section for C++ compilers.

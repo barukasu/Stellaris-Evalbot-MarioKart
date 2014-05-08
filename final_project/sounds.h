@@ -28,18 +28,17 @@ extern const unsigned char g_ucSoundWav3[];
 extern const unsigned char g_ucSoundWav4[];
 extern const unsigned char g_ucSoundWav5[];
 
+extern const unsigned char g_ucSoundWav6[];
+extern const unsigned char g_ucSoundWav7[];
+extern const unsigned char g_ucSoundWav8[];
+extern const unsigned char g_ucSoundWav9[];
+extern const unsigned char g_ucSoundWav10[];
 
 extern const unsigned long g_ulSoundWav1Len;
 extern const unsigned long g_ulSoundWav2Len;
 extern const unsigned long g_ulSoundWav3Len;
 extern const unsigned long g_ulSoundWav4Len;
 extern const unsigned long g_ulSoundWav5Len;
-
-extern const unsigned char g_ucSoundWav6[];
-extern const unsigned char g_ucSoundWav7[];
-extern const unsigned char g_ucSoundWav8[];
-extern const unsigned char g_ucSoundWav9[];
-extern const unsigned char g_ucSoundWav10[];
 
 extern const unsigned long g_ulSoundWav6Len;
 extern const unsigned long g_ulSoundWav7Len;
@@ -59,18 +58,16 @@ static const tWaveClip sWaveClips[] =
     { g_ucSoundWav1, "Mario" },
     { g_ucSoundWav2, "Boing" },
     { g_ucSoundWav3, "Crash" },
-    { g_ucSoundWav4, "Horn" },
-    { g_ucSoundWav5, "Note" },
-    { g_ucSoundWav6, "Note" },
-    { g_ucSoundWav7, "Note" },
-    { g_ucSoundWav8, "Note" },
-    { g_ucSoundWav9, "Note" },
-    { g_ucSoundWav10, "Note" },
+    { g_ucSoundWav4, "Horn"  },
+    { g_ucSoundWav5, "Note"  },
+    { g_ucSoundWav6, "Note"  },
+    { g_ucSoundWav7, "Note"  },
+    { g_ucSoundWav8, "Note"  },
+    { g_ucSoundWav9, "Note"  },
+    { g_ucSoundWav10, "Note"  }
 };
-//    { g_ucSoundWav6, "huh?" },
-//    { g_ucSoundWav7, "mk64" },
-//    { g_ucSoundWav8, "crash" },
-//    { g_ucSoundWav9, "countdown" },
+
+unsigned long getSoundSize(int soundid);
 
 #define NUM_WAVES (sizeof(sWaveClips) / sizeof(tWaveClip))
 

@@ -15,7 +15,15 @@ Warn : Only resetting the Cortex-M3 core, use a reset-init event handler to rese
 invalid command name "delay"
 target state: halted
 target halted due to debug-request, current mode: Thread 
+<<<<<<< HEAD
 xPSR: 0x21000000 pc: 0x00003e44 msp: 0x2000b7b0
+=======
+xPSR: 0x61000000 pc: 0x0000260c msp: 0x2000b750
+requesting target halt and executing a soft reset
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
+>>>>>>> 7b5b4c246247bcf49a15d8908f902a49b7914afe
 requesting target halt and executing a soft reset
 target state: halted
 target halted due to debug-request, current mode: Thread 
@@ -35,6 +43,7 @@ xPSR: 0x01000000 pc: 0x01000c4c msp: 0x20000800
 Error: ftdi_write_data: usb bulk write failed
 Error: couldn't write MPSSE commands to FT2232
 Polling target lm3s.cpu failed, GDB will be halted. Polling again in 100ms
+<<<<<<< HEAD
 Error: ftdi_write_data: usb bulk write failed
 Error: couldn't write MPSSE commands to FT2232
 Error: ftdi_write_data: usb bulk write failed
@@ -46,5 +55,16 @@ Error: flash_erase returned -304
 Error: ftdi_write_data: usb bulk write failed
 Error: couldn't write MPSSE commands to FT2232
 Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
+=======
+Warn : Invalid ACK 0x7 in JTAG-DP transaction
+Warn : Invalid ACK 0x7 in JTAG-DP transaction
+Warn : Block read error address 0x1000c4c
+Error: address + size wrapped(0xfffffffe, 0x00000004)
+Error: address + size wrapped(0xfffffffe, 0x00000004)
+Error: JTAG-DP OVERRUN - check clock, memaccess, or reduce jtag speed
+Error: MEM_AP_CSW 0x23000040, MEM_AP_TAR 0x0
+Polling target lm3s.cpu failed, GDB will be halted. Polling again in 300ms
+Polling target lm3s.cpu succeeded again
+>>>>>>> 7b5b4c246247bcf49a15d8908f902a49b7914afe
 shutdown command invoked
 shutdown command invoked
